@@ -1,0 +1,75 @@
+# Preset: Educativo Lungo (3-4 ore)
+# Per progetti di documentazione didattica con molti subtask
+
+cli:
+  backend: "codex"
+
+event_loop:
+  prompt_file: "PROMPT.md"
+  completion_promise: "LOOP_COMPLETE"
+  max_iterations: 500
+  max_runtime_seconds: 18000
+  starting_event: "lezione.start"
+  iteration_delay_ms: 2000
+
+core:
+  specs_dir: "specs"
+  output_dir: "lezione"
+  
+  guardrails:
+    - "LINGUA: SOLO ITALIANO in tutto il contenuto"
+    - "ZERO codice eseguibile - solo pseudocodice e spiegazioni"
+    - "Ogni task deve essere piccolo (15-20 minuti di lavoro)"
+
+memories:
+  enabled: true
+  injection: "auto"
+
+tasks:
+  enabled: true
+
+hats:
+  planner:
+    name: "Pianificatore"
+    triggers: ["lezione.start", "fase.completata"]
+    publishes: ["piano.pronto"]
+    max_activations: 100
+    instructions: |
+      Crea task granulari per ogni sezione. Ogni task = 15-20 min di lavoro.
+      Esempi: "Scrivi introduzione", "Spiega concetto X", "Crea pseudocodice"
+
+  writer:
+    name: "Redattore"
+    triggers: ["piano.pronto"]
+    publishes: ["sezione.scritta", "scrittura.bloccata"]
+    max_activations: 400
+    instructions: |
+      Scrivi in italiano. Zero codice eseguibile. Spiega come a un principiante.
+
+  reviewer:
+    name: "Revisore"
+    triggers: ["sezione.scritta"]
+    publishes: ["revisione.ok", "revisione.ko"]
+    max_activations: 200
+    instructions: |
+      Verifica: tutto in italiano? Chiaro per principianti? Completo?
+
+  teacher:
+    name: "Insegnante"
+    triggers: ["revisione.ok"]
+    publishes: ["esercizi.pronti", "fase.completata"]
+    max_activations: 100
+    instructions: |
+      Crea esercizi e domande. Se fase completa, emetti fase.completata.
+
+  completer:
+    name: "Finalizzatore"
+    triggers: ["fase.completata"]
+    publishes: ["lezione.start", "LOOP_COMPLETE"]
+    default_publishes: "LOOP_COMPLETE"
+    max_activations: 10
+
+RObot:
+  enabled: true
+  timeout_seconds: 7200
+  checkin_interval_seconds: 1800
