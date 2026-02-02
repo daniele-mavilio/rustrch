@@ -1,0 +1,4 @@
+2026-02-02T14:45:19.283384Z  INFO ralph_core::event_loop: Memory injection check: enabled=true, inject=Auto, workspace_root="/home/daniele/personal/learning/rustrch/rustrch-edu"
+2026-02-02T14:45:19.283532Z  INFO ralph_core::event_loop: Looking for memories at: "/home/daniele/personal/learning/rustrch/rustrch-edu/.ralph/agent/memories.md" (exists: false)
+2026-02-02T14:45:19.283553Z  INFO ralph_core::event_loop: Successfully loaded 0 memories from store
+2026-02-02T14:45:19.283560Z  INFO ralph_core::event_loop: Memory store is empty - no memories to inject

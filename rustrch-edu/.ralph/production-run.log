@@ -1,0 +1,1633 @@
+[2m2026-02-02T17:40:08.180408Z[0m [32m INFO[0m [2mralph[0m[2m:[0m Found existing scratchpad at '.ralph/agent/scratchpad.md', continuing from previous state
+[2m2026-02-02T17:40:08.186127Z[0m [32m INFO[0m [2mralph_telegram::service[0m[2m:[0m Telegram service starting [3mbot_token[0m[2m=[0m8591...7aFo [3mworkspace[0m[2m=[0m/home/daniele/personal/learning/rustrch/rustrch-edu [3mtimeout_secs[0m[2m=[0m120
+[2m2026-02-02T17:40:08.377652Z[0m [32m INFO[0m [2mralph_telegram::service[0m[2m:[0m Sent greeting to chat 6166789345
+[2m2026-02-02T17:40:08.377692Z[0m [32m INFO[0m [2mralph_telegram::service[0m[2m:[0m Telegram service started — polling for incoming messages
+[2m2026-02-02T17:40:08.377698Z[0m [32m INFO[0m [2mralph::loop_runner[0m[2m:[0m Robot human-in-the-loop service active [3mbot_token[0m[2m=[0m8591...7aFo [3mtimeout_secs[0m[2m=[0m120
+
+===============================================================================
+ ITERATION 1 | ? ralph | 0s elapsed | 1/300
+===============================================================================
+[2m2026-02-02T17:40:08.377983Z[0m [32m INFO[0m [2mralph::loop_runner[0m[2m:[0m I'm Ralph. Let's do this.
+[2m2026-02-02T17:40:08.378085Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Memory injection check: enabled=true, inject=Auto, workspace_root="/home/daniele/personal/learning/rustrch/rustrch-edu"
+[2m2026-02-02T17:40:08.378114Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Looking for memories at: "/home/daniele/personal/learning/rustrch/rustrch-edu/.ralph/agent/memories.md" (exists: true)
+[2m2026-02-02T17:40:08.379989Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Successfully loaded 15 memories from store
+[2m2026-02-02T17:40:08.380045Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting 15 memories (2365 chars) into prompt
+[2m2026-02-02T17:40:08.380083Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting scratchpad (52 chars) into prompt
+[2m2026-02-02T17:40:08.380136Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting ready tasks (0 ready, 0 open, 15 closed) into prompt
+[2m2026-02-02T17:40:08.417235Z[0m [32m INFO[0m [2mralph_telegram::service[0m[2m:[0m Registered bot commands with Telegram API
+[2m2026-02-02T17:40:08.417283Z[0m [32m INFO[0m [2mralph_telegram::service[0m[2m:[0m Telegram polling task started [3mloop_id[0m[2m=[0mmain
+[91m[1m| [0m[90m Bash     [0mCheck for open tasks
+
+No ready tasks
+
+[91m[1m| [0m[90m Bash     [0mStart the education workflow
+
+Event emitted: edu.start
+
+
+Task completed.
+
+
+===============================================================================
+ ITERATION 2 | ? writer | 6s elapsed | 2/300
+===============================================================================
+[2m2026-02-02T17:40:14.199898Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Persisted human guidance to scratchpad [3mcount[0m[2m=[0m1
+[2m2026-02-02T17:40:14.199999Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Memory injection check: enabled=true, inject=Auto, workspace_root="/home/daniele/personal/learning/rustrch/rustrch-edu"
+[2m2026-02-02T17:40:14.200022Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Looking for memories at: "/home/daniele/personal/learning/rustrch/rustrch-edu/.ralph/agent/memories.md" (exists: true)
+[2m2026-02-02T17:40:14.200105Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Successfully loaded 15 memories from store
+[2m2026-02-02T17:40:14.200130Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting 15 memories (2365 chars) into prompt
+[2m2026-02-02T17:40:14.200163Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting scratchpad (104 chars) into prompt
+[2m2026-02-02T17:40:14.200208Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting ready tasks (0 ready, 0 open, 15 closed) into prompt
+[93m[1m| [0m[90m Todo     [0m0 todos
+[91m[1m| [0m[90m Bash     [0mList files in current directory
+
+total 104
+drwxr-xr-x  8 daniele daniele  4096 Feb  2 17:50 .
+drwxr-xr-x  4 daniele daniele  4096 Feb  2 12:13 ..
+drwxr-xr-x  2 daniele daniele  4096 Feb  2 11:25 .claude
+drwxr-xr-x  9 daniele daniele  4096 Feb  2 17:49 .git
+-rw-r--r--  1 daniele daniele    12 Feb  2 14:38 .gitignore
+drwxr-xr-x  5 daniele daniele  4096 Feb  2 18:27 .ralph
+-rw-r--r--  1 daniele daniele  4138 Feb  2 18:24 PROMPT.md
+-rw-r--r--  1 daniele daniele  4397 Feb  2 10:38 README.md
+-rwxr-xr-x  1 daniele daniele 10083 Feb  2 15:57 batch_create_tasks.sh
+-rw-r--r--  1 daniele daniele 10216 Feb  2 15:56 create_tasks.sh
+drwxr-xr-x 11 daniele daniele  4096 Feb  2 18:35 lezioni
+-rw-r--r--  1 daniele daniele  4574 Feb  2 18:13 lista_modelli
+-rw-r--r--  1 daniele daniele    90 Feb  2 14:41 package-lock.json
+drwxr-xr-x  2 daniele daniele  4096 Feb  2 10:38 presets
+-rw-r--r--  1 daniele daniele  2779 Feb  2 18:27 ralph.yml
+-rw-r--r--  1 daniele daniele  7998 Feb  2 14:48 ralph_monitor.py
+drwxr-xr-x  8 daniele daniele  4096 Feb  2 10:38 specs
+-rw-r--r--  1 daniele daniele  1816 Feb  2 17:48 sync_tasks.py
+
+[91m[1m| [0m[90m Bash     [0mList files in lezioni directory
+
+total 52
+drwxr-xr-x 11 daniele daniele 4096 Feb  2 18:35 .
+drwxr-xr-x  8 daniele daniele 4096 Feb  2 17:50 ..
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 18:38 01-crawling
+drwxr-xr-x  3 daniele daniele 4096 Feb  2 14:22 01-fondamenti
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 14:54 02-setup
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 16:45 03-async
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 18:34 04-database
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 11:24 05-ml
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 18:31 06-search
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 11:24 07-performance
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 11:24 08-deployment
+-rw-r--r--  1 daniele daniele 5349 Feb  2 15:35 README.md
+
+[91m[1m| [0m[90m Bash     [0mList files in 01-crawling directory
+
+total 60
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 18:38 .
+drwxr-xr-x 11 daniele daniele 4096 Feb  2 18:35 ..
+-rw-r--r--  1 daniele daniele 4631 Feb  2 18:36 01-introduzione-alla-fase-di-crawling.md
+-rw-r--r--  1 daniele daniele 4813 Feb  2 18:36 02-la-programmazione-asincrona.md
+-rw-r--r--  1 daniele daniele 4141 Feb  2 18:37 03-gestione-dei-percorsi-in-rust.md
+-rw-r--r--  1 daniele daniele 4503 Feb  2 18:37 04-leggere-i-metadati.md
+-rw-r--r--  1 daniele daniele 4748 Feb  2 18:38 05-pseudocodice-del-crawler.md
+-rw-r--r--  1 daniele daniele 4296 Feb  2 18:38 06-spiegazione-dettagliata.md
+-rw-r--r--  1 daniele daniele 3878 Feb  2 18:38 07-esercizi-e-domande.md
+
+[91m[1m| [0m[90m Bash     [0mList files in 04-database directory
+
+total 48
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 18:34 .
+drwxr-xr-x 11 daniele daniele 4096 Feb  2 18:35 ..
+-rw-r--r--  1 daniele daniele 5190 Feb  2 18:30 L4.02-tokenizzazione-teoria.md
+-rw-r--r--  1 daniele daniele 5090 Feb  2 18:30 L4.03-algoritmo-bm25-teoria.md
+-rw-r--r--  1 daniele daniele 4394 Feb  2 18:32 L4.05-pseudocodice-ricerca-semantica.md
+-rw-r--r--  1 daniele daniele 3758 Feb  2 18:33 L4.06-pseudocodice-ricerca-ibrida.md
+-rw-r--r--  1 daniele daniele 5197 Feb  2 18:34 L4.07-ricerca-ibrida-teoria.md
+-rw-r--r--  1 daniele daniele 2809 Feb  2 18:34 L4.08-ricerca-ibrida-esercizi.md
+
+[91m[1m| [0m[90m Bash     [0mList files in 06-search directory
+
+total 24
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 18:31 .
+drwxr-xr-x 11 daniele daniele 4096 Feb  2 18:35 ..
+-rw-r--r--  1 daniele daniele 5935 Feb  2 18:29 L4.01-introduzione-alla-fase-di-ricerca.md
+-rw-r--r--  1 daniele daniele 6398 Feb  2 18:31 L4.04-pseudocodice-per-bm25.md
+
+[91m[1m| [0m[90m Bash     [0mList files in specs directory
+
+total 32
+drwxr-xr-x 8 daniele daniele 4096 Feb  2 10:38 .
+drwxr-xr-x 8 daniele daniele 4096 Feb  2 17:50 ..
+drwxr-xr-x 2 daniele daniele 4096 Feb  2 10:38 01-crawling
+drwxr-xr-x 2 daniele daniele 4096 Feb  2 10:38 02-indicizzazione
+drwxr-xr-x 2 daniele daniele 4096 Feb  2 10:38 03-embeddings
+drwxr-xr-x 2 daniele daniele 4096 Feb  2 10:38 04-ricerca
+drwxr-xr-x 2 daniele daniele 4096 Feb  2 10:38 05-testing
+drwxr-xr-x 2 daniele daniele 4096 Feb  2 10:38 06-conclusione
+
+[91m[1m| [0m[90m Bash     [0mList files in 04-ricerca directory
+
+total 16
+drwxr-xr-x 2 daniele daniele 4096 Feb  2 10:38 .
+drwxr-xr-x 8 daniele daniele 4096 Feb  2 10:38 ..
+-rw-r--r-- 1 daniele daniele 4713 Feb  2 10:38 PROMPT.md
+
+[96m[1m| [0m[90m Read     [0mspecs/04-ricerca/PROMPT.md
+[91m[1m| [0m[90m Bash     [0mList files in 06-conclusione directory
+
+total 16
+drwxr-xr-x 2 daniele daniele 4096 Feb  2 10:38 .
+drwxr-xr-x 8 daniele daniele 4096 Feb  2 10:38 ..
+-rw-r--r-- 1 daniele daniele 5623 Feb  2 10:38 PROMPT.md
+
+[96m[1m| [0m[90m Read     [0mspecs/06-conclusione/PROMPT.md
+[91m[1m| [0m[90m Bash     [0mList files in 05-testing directory
+
+total 12
+drwxr-xr-x 2 daniele daniele 4096 Feb  2 10:38 .
+drwxr-xr-x 8 daniele daniele 4096 Feb  2 10:38 ..
+-rw-r--r-- 1 daniele daniele 3667 Feb  2 10:38 PROMPT.md
+
+[96m[1m| [0m[90m Read     [0mspecs/05-testing/PROMPT.md
+[91m[1m| [0m[90m Bash     [0mList files in 02-indicizzazione directory
+
+total 12
+drwxr-xr-x 2 daniele daniele 4096 Feb  2 10:38 .
+drwxr-xr-x 8 daniele daniele 4096 Feb  2 10:38 ..
+-rw-r--r-- 1 daniele daniele 2757 Feb  2 10:38 PROMPT.md
+
+[96m[1m| [0m[90m Read     [0mspecs/02-indicizzazione/PROMPT.md
+[91m[1m| [0m[90m Bash     [0mList files in 03-embeddings directory
+
+total 12
+drwxr-xr-x 2 daniele daniele 4096 Feb  2 10:38 .
+drwxr-xr-x 8 daniele daniele 4096 Feb  2 10:38 ..
+-rw-r--r-- 1 daniele daniele 3462 Feb  2 10:38 PROMPT.md
+
+[96m[1m| [0m[90m Read     [0mspecs/03-embeddings/PROMPT.md
+[91m[1m| [0m[90m Bash     [0mList files in 01-crawling directory
+
+total 12
+drwxr-xr-x 2 daniele daniele 4096 Feb  2 10:38 .
+drwxr-xr-x 8 daniele daniele 4096 Feb  2 10:38 ..
+-rw-r--r-- 1 daniele daniele 2189 Feb  2 10:38 PROMPT.md
+
+[96m[1m| [0m[90m Read     [0mspecs/01-crawling/PROMPT.md
+[91m[1m| [0m[90m Bash     [0mList files in 02-setup directory
+
+total 220
+drwxr-xr-x  2 daniele daniele  4096 Feb  2 14:54 .
+drwxr-xr-x 11 daniele daniele  4096 Feb  2 18:35 ..
+-rw-r--r--  1 daniele daniele  4523 Feb  2 14:23 01-installare-rust-con-rustup.md
+-rw-r--r--  1 daniele daniele  5699 Feb  2 14:24 02-componenti-della-toolchain-rustc-cargo-rustfmt-clippy.md
+-rw-r--r--  1 daniele daniele  5373 Feb  2 14:24 03-creare-il-primo-progetto-con-cargo-new.md
+-rw-r--r--  1 daniele daniele  6981 Feb  2 14:25 04-struttura-di-un-progetto-cargo.md
+-rw-r--r--  1 daniele daniele  7052 Feb  2 14:26 05-cargo-toml-gestione-dipendenze.md
+-rw-r--r--  1 daniele daniele  8101 Feb  2 14:28 06-cargo-toml-features-e-profili-di-compilazione.md
+-rw-r--r--  1 daniele daniele  8107 Feb  2 14:29 07-configurare-vs-code-per-rust.md
+-rw-r--r--  1 daniele daniele  9793 Feb  2 14:31 08-configurare-rust-analyzer-e-le-estensioni-utili.md
+-rw-r--r--  1 daniele daniele  6881 Feb  2 14:32 09-compilazione-e-ciclo-edit-compile-run.md
+-rw-r--r--  1 daniele daniele  7471 Feb  2 14:33 10-gestione-errori-del-compilatore-leggere-i-messaggi.md
+-rw-r--r--  1 daniele daniele  6904 Feb  2 14:34 11-cargo-build-debug-vs-release.md
+-rw-r--r--  1 daniele daniele  8311 Feb  2 14:36 12-cargo-test-scrivere-e-eseguire-test-unitari.md
+-rw-r--r--  1 daniele daniele  9293 Feb  2 14:37 13-cargo-test-test-di-integrazione-e-organizzazione.md
+-rw-r--r--  1 daniele daniele  9244 Feb  2 14:39 14-cargo-doc-generare-documentazione.md
+-rw-r--r--  1 daniele daniele  8142 Feb  2 14:40 15-clippy-linting-e-best-practices-automatiche.md
+-rw-r--r--  1 daniele daniele  7604 Feb  2 14:41 16-rustfmt-formattazione-automatica-del-codice.md
+-rw-r--r--  1 daniele daniele  7699 Feb  2 14:43 17-debug-con-println-e-dbg.md
+-rw-r--r--  1 daniele daniele  7729 Feb  2 14:45 18-debug-avanzato-con-breakpoint-e-lldbgdb.md
+-rw-r--r--  1 daniele daniele  7822 Feb  2 14:46 19-gestione-versioni-rust-con-rustup.md
+-rw-r--r--  1 daniele daniele  9293 Feb  2 14:49 20-workspace-cargo-per-progetti-multi-crate.md
+-rw-r--r--  1 daniele daniele  8420 Feb  2 14:51 21-pubblicare-su-cratesio-preparazione.md
+-rw-r--r--  1 daniele daniele 10485 Feb  2 14:52 22-continuous-integration-per-progetti-rust.md
+-rw-r--r--  1 daniele daniele  7754 Feb  2 14:54 23-configurare-git-e-gitignore-per-rust.md
+
+[91m[1m| [0m[90m Bash     [0mList files in 03-async directory
+
+total 104
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 16:45 .
+drwxr-xr-x 11 daniele daniele 4096 Feb  2 18:35 ..
+-rw-r--r--  1 daniele daniele 5809 Feb  2 15:12 01-introduzione-alla-programmazione-asincrona.md
+-rw-r--r--  1 daniele daniele 4365 Feb  2 16:20 01-osservazioni-iniziali-su-setup-ambiente-rust.md
+-rw-r--r--  1 daniele daniele 5299 Feb  2 16:37 02-comandi-cargo-essenziali.md
+-rw-r--r--  1 daniele daniele 5324 Feb  2 15:18 02-differenza-sync-vs-async.md
+-rw-r--r--  1 daniele daniele 6523 Feb  2 15:27 03-il-tipo-future-in-rust.md
+-rw-r--r--  1 daniele daniele 5639 Feb  2 16:15 04-canali-comunicazione.md
+-rw-r--r--  1 daniele daniele 4672 Feb  2 15:22 04-installare-tokio-runtime.md
+-rw-r--r--  1 daniele daniele 5091 Feb  2 15:33 05-async-await.md
+-rw-r--r--  1 daniele daniele 3509 Feb  2 16:35 L3.05.md
+-rw-r--r--  1 daniele daniele 3177 Feb  2 16:04 async-01-introduzione.md
+-rw-r--r--  1 daniele daniele 3293 Feb  2 16:04 async-02-futures.md
+-rw-r--r--  1 daniele daniele 3392 Feb  2 16:04 async-03-tokio.md
+-rw-r--r--  1 daniele daniele 4392 Feb  2 16:45 l3-03-organizzazione-del-progetto-lezioni-con-rust.md
+-rw-r--r--  1 daniele daniele 4555 Feb  2 16:42 l3-06-runtime-async-con-tokio.md
+
+[91m[1m| [0m[90m Bash     [0mList files in 05-ml directory
+
+total 8
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 11:24 .
+drwxr-xr-x 11 daniele daniele 4096 Feb  2 18:35 ..
+
+[91m[1m| [0m[90m Bash     [0mList files in 07-performance directory
+
+total 8
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 11:24 .
+drwxr-xr-x 11 daniele daniele 4096 Feb  2 18:35 ..
+
+[91m[1m| [0m[90m Bash     [0mList files in 08-deployment directory
+
+total 8
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 11:24 .
+drwxr-xr-x 11 daniele daniele 4096 Feb  2 18:35 ..
+
+[91m[1m| [0m[90m Bash     [0mList files in 01-fondamenti directory
+
+total 212
+drwxr-xr-x  3 daniele daniele 4096 Feb  2 14:22 .
+drwxr-xr-x 11 daniele daniele 4096 Feb  2 18:35 ..
+drwxr-xr-x  3 daniele daniele 4096 Feb  2 12:35 .ralph
+-rw-r--r--  1 daniele daniele 4997 Feb  2 11:32 01-introduzione-a-rust-e-perche-usarlo-per-un-motore-di-ricerca.md
+-rw-r--r--  1 daniele daniele 5166 Feb  2 11:33 02-ownership-il-concetto-fondamentale.md
+-rw-r--r--  1 daniele daniele 6471 Feb  2 14:02 03-ownership-move-semantics-e-copy-trait.md
+-rw-r--r--  1 daniele daniele 5323 Feb  2 11:34 04-borrowing-riferimenti-immutabili.md
+-rw-r--r--  1 daniele daniele 5748 Feb  2 11:34 05-borrowing-riferimenti-mutabili-e-regole-del-borrow-checker.md
+-rw-r--r--  1 daniele daniele 5450 Feb  2 12:23 06-lifetime-concetti-base-e-annotazioni.md
+-rw-r--r--  1 daniele daniele 5373 Feb  2 14:04 07-lifetime-elision-e-casi-comuni.md
+-rw-r--r--  1 daniele daniele 6025 Feb  2 14:04 08-variabili-tipi-primitivi-e-type-inference.md
+-rw-r--r--  1 daniele daniele 5939 Feb  2 14:05 09-stringhe-in-rust-string-vs-str.md
+-rw-r--r--  1 daniele daniele 6511 Feb  2 14:06 10-tuple-array-e-slice.md
+-rw-r--r--  1 daniele daniele 6211 Feb  2 14:07 11-struct-definizione-e-implementazione.md
+-rw-r--r--  1 daniele daniele 6019 Feb  2 14:08 12-struct-metodi-e-funzioni-associate.md
+-rw-r--r--  1 daniele daniele 6864 Feb  2 14:09 13-enum-definizione-e-varianti-con-dati.md
+-rw-r--r--  1 daniele daniele 6872 Feb  2 14:10 14-enum-option-t-e-gestione-valori-opzionali.md
+-rw-r--r--  1 daniele daniele 7665 Feb  2 14:11 15-enum-result-t-e-e-gestione-errori.md
+-rw-r--r--  1 daniele daniele 6806 Feb  2 14:11 16-pattern-matching-con-match.md
+-rw-r--r--  1 daniele daniele 6837 Feb  2 14:12 17-pattern-matching-if-let-e-while-let.md
+-rw-r--r--  1 daniele daniele 6719 Feb  2 14:13 18-vettori-vec-t-e-operazioni-comuni.md
+-rw-r--r--  1 daniele daniele 7109 Feb  2 14:14 19-hashmap-e-collezioni.md
+-rw-r--r--  1 daniele daniele 7147 Feb  2 14:15 20-iteratori-concetti-base-e-metodi-principali.md
+-rw-r--r--  1 daniele daniele 8111 Feb  2 14:16 21-iteratori-map-filter-collect-e-catene.md
+-rw-r--r--  1 daniele daniele 6258 Feb  2 14:17 22-trait-definizione-e-implementazione.md
+-rw-r--r--  1 daniele daniele 6114 Feb  2 14:18 23-trait-trait-bounds-e-generics.md
+-rw-r--r--  1 daniele daniele 7261 Feb  2 14:20 24-closures-e-funzioni-di-ordine-superiore.md
+-rw-r--r--  1 daniele daniele 7920 Feb  2 14:22 25-moduli-e-visibilita-organizzare-il-codice.md
+
+[91m[1m| [0m[90m Bash     [0mList files in 01-fondamenti/.ralph directory
+
+total 12
+drwxr-xr-x 3 daniele daniele 4096 Feb  2 12:35 .
+drwxr-xr-x 3 daniele daniele 4096 Feb  2 14:22 ..
+drwxr-xr-x 2 daniele daniele 4096 Feb  2 12:35 agent
+
+[91m[1m| [0m[90m Bash     [0mList files in 01-fondamenti/.ralph/agent directory
+
+total 8
+drwxr-xr-x 2 daniele daniele 4096 Feb  2 12:35 .
+drwxr-xr-x 3 daniele daniele 4096 Feb  2 12:35 ..
+-rw-r--r-- 1 daniele daniele    0 Feb  2 12:35 tasks.jsonl.lock
+
+[91m[1m| [0m[90m Bash     [0mList files in .ralph/agent directory
+
+total 28
+drwxr-xr-x 2 daniele daniele 4096 Feb  2 18:29 .
+drwxr-xr-x 5 daniele daniele 4096 Feb  2 18:27 ..
+-rw-r--r-- 1 daniele daniele 2389 Feb  2 18:38 memories.md
+-rw-r--r-- 1 daniele daniele    0 Feb  2 18:29 memories.md.lock
+-rw-r--r-- 1 daniele daniele  104 Feb  2 18:40 scratchpad.md
+-rw-r--r-- 1 daniele daniele  222 Feb  2 17:43 summary.md
+-rw-r--r-- 1 daniele daniele 5233 Feb  2 18:39 tasks.jsonl
+-rw-r--r-- 1 daniele daniele    0 Feb  2 17:43 tasks.jsonl.lock
+
+[96m[1m| [0m[90m Read     [0m.ralph/agent/tasks.jsonl
+[91m[1m| [0m[90m Bash     [0mCheck for ready tasks
+
+[]
+
+[91m[1m| [0m[90m Bash     [0mEmit edu.start event to start planning the next batch of tasks
+
+Event emitted: edu.start
+
+[93m[1m| [0m[90m Todo     [0m0 todos
+
+Task completed.
+
+
+===============================================================================
+ ITERATION 3 | ? architect | 1m 35s elapsed | 3/300
+===============================================================================
+[2m2026-02-02T17:41:43.798795Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Memory injection check: enabled=true, inject=Auto, workspace_root="/home/daniele/personal/learning/rustrch/rustrch-edu"
+[2m2026-02-02T17:41:43.798824Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Looking for memories at: "/home/daniele/personal/learning/rustrch/rustrch-edu/.ralph/agent/memories.md" (exists: true)
+[2m2026-02-02T17:41:43.798916Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Successfully loaded 15 memories from store
+[2m2026-02-02T17:41:43.798945Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting 15 memories (2365 chars) into prompt
+[2m2026-02-02T17:41:43.798976Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting scratchpad (104 chars) into prompt
+[2m2026-02-02T17:41:43.799029Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting ready tasks (0 ready, 0 open, 15 closed) into prompt
+[94m[1m| [0m[90m Glob     [0m{"pattern":"lezioni/**/*.md"}
+[94m[1m| [0m[90m Glob     [0m{"pattern":"specs/**/PROMPT.md"}
+[96m[1m| [0m[90m Read     [0mspecs/05-testing/PROMPT.md
+[91m[1m| [0m[90m Bash     [0mVerifica se la directory 05-testing esiste
+
+ls: cannot access 'lezioni/05-testing/': No such file or directory
+
+[91m[1m| [0m[90m Bash     [0mCrea la directory per la fase di testing
+[91m[1m| [0m[90m Bash     [0mAggiungi task per la sezione introduttiva
+
+Created task task-1770054113-ed5b
+  Title: L5.01: Introduzione alla fase di testing
+  Priority: 1
+
+[91m[1m| [0m[90m Bash     [0mAggiungi task per i test unitari
+
+Created task task-1770054116-743b
+  Title: L5.02: Test unitari in Rust
+  Priority: 2
+
+[91m[1m| [0m[90m Bash     [0mAggiungi task per il pseudocodice dei test del crawler
+
+Created task task-1770054118-00e4
+  Title: L5.03: Pseudocodice per test del crawler
+  Priority: 3
+
+[91m[1m| [0m[90m Bash     [0mAggiungi task per i test di integrazione
+
+Created task task-1770054121-76f8
+  Title: L5.04: Test di integrazione
+  Priority: 4
+
+[91m[1m| [0m[90m Bash     [0mAggiungi task per il pseudocodice dei test di ricerca
+
+Created task task-1770054124-2063
+  Title: L5.05: Pseudocodice per test di ricerca
+  Priority: 5
+
+[91m[1m| [0m[90m Bash     [0mAggiungi task per il benchmarking
+
+Created task task-1770054126-94e2
+  Title: L5.06: Benchmarking
+  Priority: 5
+
+[91m[1m| [0m[90m Bash     [0mAggiungi task per l'ottimizzazione
+
+Created task task-1770054127-453e
+  Title: L5.07: Ottimizzazione performance
+  Priority: 5
+
+[91m[1m| [0m[90m Bash     [0mAggiungi task per Rayon
+
+Created task task-1770054129-e262
+  Title: L5.08: Parallelismo con Rayon
+  Priority: 5
+
+[91m[1m| [0m[90m Bash     [0mAggiungi task per il pseudocodice del crawling parallelo
+
+Created task task-1770054132-6f47
+  Title: L5.09: Pseudocodice per crawling parallelo
+  Priority: 5
+
+[91m[1m| [0m[90m Bash     [0mAggiungi task per esercizi e domande
+
+Created task task-1770054135-ede2
+  Title: L5.10: Esercizi e domande
+  Priority: 5
+
+[91m[1m| [0m[90m Bash     [0mSegnala che l'outline è pronto per la fase di testing
+
+Event emitted: outline.ready
+
+
+Task completato.
+
+
+===============================================================================
+ ITERATION 4 | ? writer | 2m 10s elapsed | 4/300
+===============================================================================
+[2m2026-02-02T17:42:18.567844Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Memory injection check: enabled=true, inject=Auto, workspace_root="/home/daniele/personal/learning/rustrch/rustrch-edu"
+[2m2026-02-02T17:42:18.567866Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Looking for memories at: "/home/daniele/personal/learning/rustrch/rustrch-edu/.ralph/agent/memories.md" (exists: true)
+[2m2026-02-02T17:42:18.567943Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Successfully loaded 15 memories from store
+[2m2026-02-02T17:42:18.567963Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting 15 memories (2365 chars) into prompt
+[2m2026-02-02T17:42:18.567989Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting scratchpad (104 chars) into prompt
+[2m2026-02-02T17:42:18.568040Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting ready tasks (10 ready, 10 open, 15 closed) into prompt
+[91m[1m| [0m[90m Bash     [0mGet the first ready task
+
+[
+
+[91m[1m| [0m[90m Bash     [0mList ready tasks
+
+ID                   Priority Title                                                       
+------------------------------------------------------------------------------------------
+task-1770054113-ed5b 1        L5.01: Introduzione alla fase di testing                    
+task-1770054116-743b 2        L5.02: Test unitari in Rust                                 
+task-1770054118-00e4 3        L5.03: Pseudocodice per test del crawler                    
+task-1770054121-76f8 4        L5.04: Test di integrazione                                 
+task-1770054124-2063 5        L5.05: Pseudocodice per test di ricerca                     
+task-1770054126-94e2 5        L5.06: Benchmarking                                         
+task-1770054127-453e 5        L5.07: Ottimizzazione performance                           
+task-1770054129-e262 5        L5.08: Parallelismo con Rayon                               
+task-1770054132-6f47 5        L5.09: Pseudocodice per crawling parallelo                  
+task-1770054135-ede2 5        L5.10: Esercizi e domande                                   
+
+[91m[1m| [0m[90m Bash     [0mShow details of the first task
+
+ID:          task-1770054113-ed5b
+Title:       L5.01: Introduzione alla fase di testing
+Description: Spiegare l'importanza del testing e panoramica sull'ottimizzazione
+Status:      open
+Priority:    1
+Created:     2026-02-02T17:41:53.912733585+00:00
+
+[92m[1m| [0m[90m Write    [0mlezioni/05-testing/L5.01-introduzione-testing.md
+[91m[1m| [0m[90m Bash     [0mAdd memory for the completed task
+
+error: invalid value 'pedagogico' for '--type <TYPE>': Invalid memory type: 'pedagogico'. Valid types: pattern, decision, fix, context
+
+For more information, try '--help'.
+
+[91m[1m| [0m[90m Bash     [0mAdd memory for the completed task
+
+Memory stored: mem-1770054164-b5a9
+
+[91m[1m| [0m[90m Bash     [0mClose the completed task
+
+Closed task: task-1770054113-ed5b - L5.01: Introduzione alla fase di testing
+
+[91m[1m| [0m[90m Bash     [0mEmit event for completed section
+
+Event emitted: section.written
+
+
+Task completato: L5.01: Introduzione alla fase di testing.
+
+
+===============================================================================
+ ITERATION 5 | ? reviewer | 2m 40s elapsed | 5/300
+===============================================================================
+[2m2026-02-02T17:42:48.685269Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Memory injection check: enabled=true, inject=Auto, workspace_root="/home/daniele/personal/learning/rustrch/rustrch-edu"
+[2m2026-02-02T17:42:48.685289Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Looking for memories at: "/home/daniele/personal/learning/rustrch/rustrch-edu/.ralph/agent/memories.md" (exists: true)
+[2m2026-02-02T17:42:48.685352Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Successfully loaded 16 memories from store
+[2m2026-02-02T17:42:48.685370Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting 16 memories (2514 chars) into prompt
+[2m2026-02-02T17:42:48.685392Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting scratchpad (104 chars) into prompt
+[2m2026-02-02T17:42:48.685432Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting ready tasks (9 ready, 9 open, 16 closed) into prompt
+[93m[1m| [0m[90m Todo     [0m0 todos
+[91m[1m| [0m[90m Bash     [0mList files in current directory
+
+total 104
+drwxr-xr-x  8 daniele daniele  4096 Feb  2 17:50 .
+drwxr-xr-x  4 daniele daniele  4096 Feb  2 12:13 ..
+drwxr-xr-x  2 daniele daniele  4096 Feb  2 11:25 .claude
+drwxr-xr-x  9 daniele daniele  4096 Feb  2 17:49 .git
+-rw-r--r--  1 daniele daniele    12 Feb  2 14:38 .gitignore
+drwxr-xr-x  5 daniele daniele  4096 Feb  2 18:27 .ralph
+-rw-r--r--  1 daniele daniele  4138 Feb  2 18:24 PROMPT.md
+-rw-r--r--  1 daniele daniele  4397 Feb  2 10:38 README.md
+-rwxr-xr-x  1 daniele daniele 10083 Feb  2 15:57 batch_create_tasks.sh
+-rw-r--r--  1 daniele daniele 10216 Feb  2 15:56 create_tasks.sh
+drwxr-xr-x 12 daniele daniele  4096 Feb  2 18:41 lezioni
+-rw-r--r--  1 daniele daniele  4574 Feb  2 18:13 lista_modelli
+-rw-r--r--  1 daniele daniele    90 Feb  2 14:41 package-lock.json
+drwxr-xr-x  2 daniele daniele  4096 Feb  2 10:38 presets
+-rw-r--r--  1 daniele daniele  2779 Feb  2 18:27 ralph.yml
+-rw-r--r--  1 daniele daniele  7998 Feb  2 14:48 ralph_monitor.py
+drwxr-xr-x  8 daniele daniele  4096 Feb  2 10:38 specs
+-rw-r--r--  1 daniele daniele  1816 Feb  2 17:48 sync_tasks.py
+
+[96m[1m| [0m[90m Read     [0mlezioni/05-testing/L5.01-introduzione-testing.md
+[91m[1m| [0m[90m Bash     [0mCount words in the file
+
+541 /home/daniele/personal/learning/rustrch/rustrch-edu/lezioni/05-testing/L5.01-introduzione-testing.md
+
+[91m[1m| [0m[90m Bash     [0mEmit review.approve event
+
+Event emitted: review.approve
+
+
+Task completed.
+
+
+===============================================================================
+ ITERATION 6 | ? coordinator | 2m 50s elapsed | 6/300
+===============================================================================
+[2m2026-02-02T17:42:58.509181Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Memory injection check: enabled=true, inject=Auto, workspace_root="/home/daniele/personal/learning/rustrch/rustrch-edu"
+[2m2026-02-02T17:42:58.509209Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Looking for memories at: "/home/daniele/personal/learning/rustrch/rustrch-edu/.ralph/agent/memories.md" (exists: true)
+[2m2026-02-02T17:42:58.509303Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Successfully loaded 16 memories from store
+[2m2026-02-02T17:42:58.509331Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting 16 memories (2514 chars) into prompt
+[2m2026-02-02T17:42:58.509358Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting scratchpad (104 chars) into prompt
+[2m2026-02-02T17:42:58.509411Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting ready tasks (9 ready, 9 open, 16 closed) into prompt
+[2m2026-02-02T17:42:59.758631Z[0m [32m INFO[0m [2mralph_telegram::service[0m[2m:[0m Received Telegram message [3mchat_id[0m[2m=[0m6166789345 [3mtext[0m[2m=[0m/tasks
+[93m[1m| [0m[90m Todo     [0m0 todos
+[91m[1m| [0m[90m Bash     [0mCheck for ready tasks
+
+ID                   Priority Title                                                       
+------------------------------------------------------------------------------------------
+task-1770054116-743b 2        L5.02: Test unitari in Rust                                 
+task-1770054118-00e4 3        L5.03: Pseudocodice per test del crawler                    
+task-1770054121-76f8 4        L5.04: Test di integrazione                                 
+task-1770054124-2063 5        L5.05: Pseudocodice per test di ricerca                     
+task-1770054126-94e2 5        L5.06: Benchmarking                                         
+task-1770054127-453e 5        L5.07: Ottimizzazione performance                           
+task-1770054129-e262 5        L5.08: Parallelismo con Rayon                               
+task-1770054132-6f47 5        L5.09: Pseudocodice per crawling parallelo                  
+task-1770054135-ede2 5        L5.10: Esercizi e domande                                   
+
+[91m[1m| [0m[90m Bash     [0mShow details of the highest priority task
+
+ID:          task-1770054116-743b
+Title:       L5.02: Test unitari in Rust
+Description: Sintassi e esempi di test unitari con #[test]
+Status:      open
+Priority:    2
+Created:     2026-02-02T17:41:56.226365620+00:00
+
+[92m[1m| [0m[90m Write    [0mlezioni/05-testing/L5.02-test-unitari.md
+[91m[1m| [0m[90m Bash     [0mCount words in the generated file
+
+447 /home/daniele/personal/learning/rustrch/rustrch-edu/lezioni/05-testing/L5.02-test-unitari.md
+
+[91m[1m| [0m[90m Bash     [0mAdd memory for completed task
+
+Memory stored: mem-1770054201-a4c6
+
+[91m[1m| [0m[90m Bash     [0mClose the completed task
+
+Closed task: task-1770054116-743b - L5.02: Test unitari in Rust
+
+[91m[1m| [0m[90m Bash     [0mEmit event to continue with the next task
+
+Event emitted: write.next
+
+
+Task completato: L5.02: Test unitari in Rust.
+
+
+===============================================================================
+ ITERATION 7 | ? writer | 3m 16s elapsed | 7/300
+===============================================================================
+[2m2026-02-02T17:43:24.986661Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Memory injection check: enabled=true, inject=Auto, workspace_root="/home/daniele/personal/learning/rustrch/rustrch-edu"
+[2m2026-02-02T17:43:24.986681Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Looking for memories at: "/home/daniele/personal/learning/rustrch/rustrch-edu/.ralph/agent/memories.md" (exists: true)
+[2m2026-02-02T17:43:24.986759Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Successfully loaded 17 memories from store
+[2m2026-02-02T17:43:24.986779Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting 17 memories (2685 chars) into prompt
+[2m2026-02-02T17:43:24.986801Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting scratchpad (104 chars) into prompt
+[2m2026-02-02T17:43:24.986859Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting ready tasks (8 ready, 8 open, 17 closed) into prompt
+[91m[1m| [0m[90m Bash     [0mGet the first ready task
+
+[
+
+[91m[1m| [0m[90m Bash     [0mList ready tasks
+
+ID                   Priority Title                                                       
+------------------------------------------------------------------------------------------
+task-1770054118-00e4 3        L5.03: Pseudocodice per test del crawler                    
+task-1770054121-76f8 4        L5.04: Test di integrazione                                 
+task-1770054124-2063 5        L5.05: Pseudocodice per test di ricerca                     
+task-1770054126-94e2 5        L5.06: Benchmarking                                         
+task-1770054127-453e 5        L5.07: Ottimizzazione performance                           
+task-1770054129-e262 5        L5.08: Parallelismo con Rayon                               
+task-1770054132-6f47 5        L5.09: Pseudocodice per crawling parallelo                  
+task-1770054135-ede2 5        L5.10: Esercizi e domande                                   
+
+[91m[1m| [0m[90m Bash     [0mShow details of the first task
+
+ID:          task-1770054118-00e4
+Title:       L5.03: Pseudocodice per test del crawler
+Description: Esempio pratico di test per il crawler
+Status:      open
+Priority:    3
+Created:     2026-02-02T17:41:58.721125511+00:00
+
+[94m[1m| [0m[90m Glob     [0m{"pattern":"**/lezioni/**/*.md"}
+[96m[1m| [0m[90m Read     [0mlezioni/05-testing/L5.02-test-unitari.md
+[92m[1m| [0m[90m Write    [0mlezioni/05-testing/L5.03-pseudocodice-test-crawler.md
+[91m[1m| [0m[90m Bash     [0mAdd memory for completed task
+
+error: invalid value 'pedagogico' for '--type <TYPE>': Invalid memory type: 'pedagogico'. Valid types: pattern, decision, fix, context
+
+For more information, try '--help'.
+
+[91m[1m| [0m[90m Bash     [0mAdd memory for completed task
+
+Memory stored: mem-1770054234-bf12
+
+[91m[1m| [0m[90m Bash     [0mClose the completed task
+
+Closed task: task-1770054118-00e4 - L5.03: Pseudocodice per test del crawler
+
+[91m[1m| [0m[90m Bash     [0mEmit section.written event
+
+Event emitted: section.written
+
+
+Task completato: L5.03: Pseudocodice per test del crawler.
+
+
+===============================================================================
+ ITERATION 8 | ? reviewer | 3m 53s elapsed | 8/300
+===============================================================================
+[2m2026-02-02T17:44:01.566370Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Memory injection check: enabled=true, inject=Auto, workspace_root="/home/daniele/personal/learning/rustrch/rustrch-edu"
+[2m2026-02-02T17:44:01.566379Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Looking for memories at: "/home/daniele/personal/learning/rustrch/rustrch-edu/.ralph/agent/memories.md" (exists: true)
+[2m2026-02-02T17:44:01.566460Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Successfully loaded 18 memories from store
+[2m2026-02-02T17:44:01.566480Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting 18 memories (2835 chars) into prompt
+[2m2026-02-02T17:44:01.566502Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting scratchpad (104 chars) into prompt
+[2m2026-02-02T17:44:01.566604Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting ready tasks (7 ready, 7 open, 18 closed) into prompt
+[96m[1m| [0m[90m Read     [0mlezioni/05-testing/L5.03-pseudocodice-test-crawler.md
+[91m[1m| [0m[90m Bash     [0mConta le parole nel file
+
+509 /home/daniele/personal/learning/rustrch/rustrch-edu/lezioni/05-testing/L5.03-pseudocodice-test-crawler.md
+
+[91m[1m| [0m[90m Bash     [0mEmetti evento di approvazione
+
+Event emitted: review.approve
+
+
+Task completed.
+
+
+===============================================================================
+ ITERATION 9 | ? coordinator | 4m 0s elapsed | 9/300
+===============================================================================
+[2m2026-02-02T17:44:08.764624Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Memory injection check: enabled=true, inject=Auto, workspace_root="/home/daniele/personal/learning/rustrch/rustrch-edu"
+[2m2026-02-02T17:44:08.764665Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Looking for memories at: "/home/daniele/personal/learning/rustrch/rustrch-edu/.ralph/agent/memories.md" (exists: true)
+[2m2026-02-02T17:44:08.764759Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Successfully loaded 18 memories from store
+[2m2026-02-02T17:44:08.764788Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting 18 memories (2835 chars) into prompt
+[2m2026-02-02T17:44:08.764816Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting scratchpad (104 chars) into prompt
+[2m2026-02-02T17:44:08.764905Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting ready tasks (7 ready, 7 open, 18 closed) into prompt
+[93m[1m| [0m[90m Todo     [0m0 todos
+[91m[1m| [0m[90m Bash     [0mCheck for ready tasks
+
+ID                   Priority Title                                                       
+------------------------------------------------------------------------------------------
+task-1770054121-76f8 4        L5.04: Test di integrazione                                 
+task-1770054124-2063 5        L5.05: Pseudocodice per test di ricerca                     
+task-1770054126-94e2 5        L5.06: Benchmarking                                         
+task-1770054127-453e 5        L5.07: Ottimizzazione performance                           
+task-1770054129-e262 5        L5.08: Parallelismo con Rayon                               
+task-1770054132-6f47 5        L5.09: Pseudocodice per crawling parallelo                  
+task-1770054135-ede2 5        L5.10: Esercizi e domande                                   
+
+[91m[1m| [0m[90m Bash     [0mShow details for task-1770054121-76f8
+
+ID:          task-1770054121-76f8
+Title:       L5.04: Test di integrazione
+Description: Testare flussi completi e setup/teardown
+Status:      open
+Priority:    4
+Created:     2026-02-02T17:42:01.358138033+00:00
+
+[91m[1m| [0m[90m Bash     [0mList contents of lezioni directory
+
+total 56
+drwxr-xr-x 12 daniele daniele 4096 Feb  2 18:41 .
+drwxr-xr-x  8 daniele daniele 4096 Feb  2 17:50 ..
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 18:38 01-crawling
+drwxr-xr-x  3 daniele daniele 4096 Feb  2 14:22 01-fondamenti
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 14:54 02-setup
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 16:45 03-async
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 18:34 04-database
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 11:24 05-ml
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 18:43 05-testing
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 18:31 06-search
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 11:24 07-performance
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 11:24 08-deployment
+-rw-r--r--  1 daniele daniele 5349 Feb  2 15:35 README.md
+
+[91m[1m| [0m[90m Bash     [0mList contents of lezioni/05-testing directory
+
+total 28
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 18:43 .
+drwxr-xr-x 12 daniele daniele 4096 Feb  2 18:41 ..
+-rw-r--r--  1 daniele daniele 4201 Feb  2 18:42 L5.01-introduzione-testing.md
+-rw-r--r--  1 daniele daniele 3253 Feb  2 18:43 L5.02-test-unitari.md
+-rw-r--r--  1 daniele daniele 4215 Feb  2 18:43 L5.03-pseudocodice-test-crawler.md
+
+[92m[1m| [0m[90m Write    [0mlezioni/05-testing/L5.04-test-integrazione.md
+[91m[1m| [0m[90m Bash     [0mClose task-1770054121-76f8
+
+Closed task: task-1770054121-76f8 - L5.04: Test di integrazione
+
+[93m[1m| [0m[90m Todo     [0m0 todos
+[91m[1m| [0m[90m Bash     [0mEmit write.next event
+
+Event emitted: write.next
+
+
+Task completato: L5.04: Test di integrazione.
+
+
+===============================================================================
+ ITERATION 10 | ? writer | 4m 29s elapsed | 10/300
+===============================================================================
+[2m2026-02-02T17:44:38.038273Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Memory injection check: enabled=true, inject=Auto, workspace_root="/home/daniele/personal/learning/rustrch/rustrch-edu"
+[2m2026-02-02T17:44:38.038292Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Looking for memories at: "/home/daniele/personal/learning/rustrch/rustrch-edu/.ralph/agent/memories.md" (exists: true)
+[2m2026-02-02T17:44:38.038404Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Successfully loaded 18 memories from store
+[2m2026-02-02T17:44:38.038424Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting 18 memories (2835 chars) into prompt
+[2m2026-02-02T17:44:38.038457Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting scratchpad (104 chars) into prompt
+[2m2026-02-02T17:44:38.038507Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting ready tasks (6 ready, 6 open, 19 closed) into prompt
+[91m[1m| [0m[90m Bash     [0mGet the first ready task
+
+[
+
+[91m[1m| [0m[90m Bash     [0mList ready tasks
+
+ID                   Priority Title                                                       
+------------------------------------------------------------------------------------------
+task-1770054124-2063 5        L5.05: Pseudocodice per test di ricerca                     
+task-1770054126-94e2 5        L5.06: Benchmarking                                         
+task-1770054127-453e 5        L5.07: Ottimizzazione performance                           
+task-1770054129-e262 5        L5.08: Parallelismo con Rayon                               
+task-1770054132-6f47 5        L5.09: Pseudocodice per crawling parallelo                  
+task-1770054135-ede2 5        L5.10: Esercizi e domande                                   
+
+[91m[1m| [0m[90m Bash     [0mShow details of the first task
+
+ID:          task-1770054124-2063
+Title:       L5.05: Pseudocodice per test di ricerca
+Description: Esempio pratico di test per la ricerca
+Status:      open
+Priority:    5
+Created:     2026-02-02T17:42:04.467045179+00:00
+
+[94m[1m| [0m[90m Glob     [0m{"pattern":"**/lezioni/**/*.md"}
+[96m[1m| [0m[90m Read     [0mlezioni/05-testing/L5.04-test-integrazione.md
+[92m[1m| [0m[90m Write    [0mlezioni/05-testing/L5.05-pseudocodice-test-ricerca.md
+[91m[1m| [0m[90m Bash     [0mAdd memory for completed task
+
+error: invalid value 'pedagogico' for '--type <TYPE>': Invalid memory type: 'pedagogico'. Valid types: pattern, decision, fix, context
+
+For more information, try '--help'.
+
+[91m[1m| [0m[90m Bash     [0mAdd memory for completed task
+
+Memory stored: mem-1770054308-2d49
+
+[91m[1m| [0m[90m Bash     [0mClose the completed task
+
+Closed task: task-1770054124-2063 - L5.05: Pseudocodice per test di ricerca
+
+[91m[1m| [0m[90m Bash     [0mEmit section.written event
+
+Event emitted: section.written
+
+
+Task completato: L5.05: Pseudocodice per test di ricerca.
+
+
+===============================================================================
+ ITERATION 11 | ? reviewer | 5m 6s elapsed | 11/300
+===============================================================================
+[2m2026-02-02T17:45:14.821642Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Memory injection check: enabled=true, inject=Auto, workspace_root="/home/daniele/personal/learning/rustrch/rustrch-edu"
+[2m2026-02-02T17:45:14.821662Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Looking for memories at: "/home/daniele/personal/learning/rustrch/rustrch-edu/.ralph/agent/memories.md" (exists: true)
+[2m2026-02-02T17:45:14.821750Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Successfully loaded 19 memories from store
+[2m2026-02-02T17:45:14.821777Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting 19 memories (2984 chars) into prompt
+[2m2026-02-02T17:45:14.821811Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting scratchpad (104 chars) into prompt
+[2m2026-02-02T17:45:14.821877Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting ready tasks (5 ready, 5 open, 20 closed) into prompt
+[91m[1m| [0m[90m Bash     [0mList files in the testing directory
+
+total 40
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 18:45 .
+drwxr-xr-x 12 daniele daniele 4096 Feb  2 18:41 ..
+-rw-r--r--  1 daniele daniele 4201 Feb  2 18:42 L5.01-introduzione-testing.md
+-rw-r--r--  1 daniele daniele 3253 Feb  2 18:43 L5.02-test-unitari.md
+-rw-r--r--  1 daniele daniele 4215 Feb  2 18:43 L5.03-pseudocodice-test-crawler.md
+-rw-r--r--  1 daniele daniele 3162 Feb  2 18:44 L5.04-test-integrazione.md
+-rw-r--r--  1 daniele daniele 4384 Feb  2 18:45 L5.05-pseudocodice-test-ricerca.md
+
+[96m[1m| [0m[90m Read     [0mlezioni/05-testing/L5.05-pseudocodice-test-ricerca.md
+[91m[1m| [0m[90m Bash     [0mCount words in the file
+
+578 lezioni/05-testing/L5.05-pseudocodice-test-ricerca.md
+
+[91m[1m| [0m[90m Bash     [0mApprove the section
+
+Event emitted: review.approve
+
+
+Task completed.
+
+
+===============================================================================
+ ITERATION 12 | ? coordinator | 5m 15s elapsed | 12/300
+===============================================================================
+[2m2026-02-02T17:45:23.216042Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Memory injection check: enabled=true, inject=Auto, workspace_root="/home/daniele/personal/learning/rustrch/rustrch-edu"
+[2m2026-02-02T17:45:23.216067Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Looking for memories at: "/home/daniele/personal/learning/rustrch/rustrch-edu/.ralph/agent/memories.md" (exists: true)
+[2m2026-02-02T17:45:23.216150Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Successfully loaded 19 memories from store
+[2m2026-02-02T17:45:23.216174Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting 19 memories (2984 chars) into prompt
+[2m2026-02-02T17:45:23.216204Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting scratchpad (104 chars) into prompt
+[2m2026-02-02T17:45:23.216252Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting ready tasks (5 ready, 5 open, 20 closed) into prompt
+[93m[1m| [0m[90m Todo     [0m0 todos
+[91m[1m| [0m[90m Bash     [0mCheck for ready tasks
+
+ID                   Priority Title                                                       
+------------------------------------------------------------------------------------------
+task-1770054126-94e2 5        L5.06: Benchmarking                                         
+task-1770054127-453e 5        L5.07: Ottimizzazione performance                           
+task-1770054129-e262 5        L5.08: Parallelismo con Rayon                               
+task-1770054132-6f47 5        L5.09: Pseudocodice per crawling parallelo                  
+task-1770054135-ede2 5        L5.10: Esercizi e domande                                   
+
+[91m[1m| [0m[90m Bash     [0mShow details of the benchmarking task
+
+ID:          task-1770054126-94e2
+Title:       L5.06: Benchmarking
+Description: Introduzione al benchmarking con Criterion
+Status:      open
+Priority:    5
+Created:     2026-02-02T17:42:06.234724032+00:00
+
+[94m[1m| [0m[90m Glob     [0m{"pattern":"lezioni/**/*.md"}
+[92m[1m| [0m[90m Write    [0mlezioni/05-testing/L5.06-benchmarking.md
+[91m[1m| [0m[90m Bash     [0mCount words in the benchmarking file
+
+550 /home/daniele/personal/learning/rustrch/rustrch-edu/lezioni/05-testing/L5.06-benchmarking.md
+
+[91m[1m| [0m[90m Bash     [0mAdd memory for benchmarking section
+
+error: unexpected argument 'rust,' found
+
+Usage: ralph tools memory add [OPTIONS] <CONTENT>
+
+For more information, try '--help'.
+
+[91m[1m| [0m[90m Bash     [0mAdd memory for benchmarking section
+
+Memory stored: mem-1770054354-e154
+
+[91m[1m| [0m[90m Bash     [0mClose the benchmarking task
+
+Closed task: task-1770054126-94e2 - L5.06: Benchmarking
+
+[91m[1m| [0m[90m Bash     [0mEmit write.next event
+
+Event emitted: write.next
+
+
+Task completato: L5.06: Benchmarking
+
+
+===============================================================================
+ ITERATION 13 | ? writer | 5m 52s elapsed | 13/300
+===============================================================================
+[2m2026-02-02T17:46:00.674713Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Memory injection check: enabled=true, inject=Auto, workspace_root="/home/daniele/personal/learning/rustrch/rustrch-edu"
+[2m2026-02-02T17:46:00.674747Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Looking for memories at: "/home/daniele/personal/learning/rustrch/rustrch-edu/.ralph/agent/memories.md" (exists: true)
+[2m2026-02-02T17:46:00.674829Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Successfully loaded 20 memories from store
+[2m2026-02-02T17:46:00.674850Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting 20 memories (3147 chars) into prompt
+[2m2026-02-02T17:46:00.674876Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting scratchpad (104 chars) into prompt
+[2m2026-02-02T17:46:00.674951Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting ready tasks (4 ready, 4 open, 21 closed) into prompt
+[91m[1m| [0m[90m Bash     [0mGet the first ready task
+
+[
+
+[91m[1m| [0m[90m Bash     [0mList ready tasks
+
+ID                   Priority Title                                                       
+------------------------------------------------------------------------------------------
+task-1770054127-453e 5        L5.07: Ottimizzazione performance                           
+task-1770054129-e262 5        L5.08: Parallelismo con Rayon                               
+task-1770054132-6f47 5        L5.09: Pseudocodice per crawling parallelo                  
+task-1770054135-ede2 5        L5.10: Esercizi e domande                                   
+
+[91m[1m| [0m[90m Bash     [0mShow details of the first task
+
+ID:          task-1770054127-453e
+Title:       L5.07: Ottimizzazione performance
+Description: Tecniche di caching e ottimizzazione query
+Status:      open
+Priority:    5
+Created:     2026-02-02T17:42:07.345408125+00:00
+
+[94m[1m| [0m[90m Glob     [0m{"pattern":"lezioni"}
+[91m[1m| [0m[90m Bash     [0mList files in current directory
+
+total 108
+drwxr-xr-x  8 daniele daniele  4096 Feb  2 18:44 .
+drwxr-xr-x  4 daniele daniele  4096 Feb  2 12:13 ..
+drwxr-xr-x  2 daniele daniele  4096 Feb  2 11:25 .claude
+drwxr-xr-x  9 daniele daniele  4096 Feb  2 18:46 .git
+-rw-r--r--  1 daniele daniele    12 Feb  2 14:38 .gitignore
+drwxr-xr-x  5 daniele daniele  4096 Feb  2 18:27 .ralph
+-rw-r--r--  1 daniele daniele  4138 Feb  2 18:24 PROMPT.md
+-rw-r--r--  1 daniele daniele  4397 Feb  2 10:38 README.md
+-rwxr-xr-x  1 daniele daniele 10083 Feb  2 15:57 batch_create_tasks.sh
+-rw-r--r--  1 daniele daniele 10216 Feb  2 15:56 create_tasks.sh
+drwxr-xr-x 12 daniele daniele  4096 Feb  2 18:41 lezioni
+-rw-r--r--  1 daniele daniele  4574 Feb  2 18:13 lista_modelli
+-rw-r--r--  1 daniele daniele    90 Feb  2 14:41 package-lock.json
+drwxr-xr-x  2 daniele daniele  4096 Feb  2 10:38 presets
+-rw-r--r--  1 daniele daniele  2779 Feb  2 18:27 ralph.yml
+-rw-r--r--  1 daniele daniele  7998 Feb  2 14:48 ralph_monitor.py
+-rw-r--r--  1 daniele daniele  1611 Feb  2 18:44 ralph_sniffer.py
+drwxr-xr-x  8 daniele daniele  4096 Feb  2 10:38 specs
+-rw-r--r--  1 daniele daniele  1816 Feb  2 17:48 sync_tasks.py
+
+[91m[1m| [0m[90m Bash     [0mList files in lezioni directory
+
+total 56
+drwxr-xr-x 12 daniele daniele 4096 Feb  2 18:41 .
+drwxr-xr-x  8 daniele daniele 4096 Feb  2 18:44 ..
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 18:38 01-crawling
+drwxr-xr-x  3 daniele daniele 4096 Feb  2 14:22 01-fondamenti
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 14:54 02-setup
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 16:45 03-async
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 18:34 04-database
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 11:24 05-ml
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 18:45 05-testing
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 18:31 06-search
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 11:24 07-performance
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 11:24 08-deployment
+-rw-r--r--  1 daniele daniele 5349 Feb  2 15:35 README.md
+
+[91m[1m| [0m[90m Bash     [0mList files in 05-testing directory
+
+total 48
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 18:45 .
+drwxr-xr-x 12 daniele daniele 4096 Feb  2 18:41 ..
+-rw-r--r--  1 daniele daniele 4201 Feb  2 18:42 L5.01-introduzione-testing.md
+-rw-r--r--  1 daniele daniele 3253 Feb  2 18:43 L5.02-test-unitari.md
+-rw-r--r--  1 daniele daniele 4215 Feb  2 18:43 L5.03-pseudocodice-test-crawler.md
+-rw-r--r--  1 daniele daniele 3162 Feb  2 18:44 L5.04-test-integrazione.md
+-rw-r--r--  1 daniele daniele 4384 Feb  2 18:45 L5.05-pseudocodice-test-ricerca.md
+-rw-r--r--  1 daniele daniele 4298 Feb  2 18:45 L5.06-benchmarking.md
+
+[92m[1m| [0m[90m Write    [0mlezioni/05-testing/L5.07-ottimizzazione-performance.md
+[91m[1m| [0m[90m Bash     [0mAdd memory for L5.07
+
+error: invalid value 'pedagogico' for '--type <TYPE>': Invalid memory type: 'pedagogico'. Valid types: pattern, decision, fix, context
+
+For more information, try '--help'.
+
+[91m[1m| [0m[90m Bash     [0mAdd memory for L5.07
+
+Memory stored: mem-1770054397-986d
+
+[91m[1m| [0m[90m Bash     [0mClose task L5.07
+
+Closed task: task-1770054127-453e - L5.07: Ottimizzazione performance
+
+[91m[1m| [0m[90m Bash     [0mEmit section.written event
+
+Event emitted: section.written
+
+
+Task completato: L5.07: Ottimizzazione performance
+
+
+===============================================================================
+ ITERATION 14 | ? reviewer | 6m 35s elapsed | 14/300
+===============================================================================
+[2m2026-02-02T17:46:43.493899Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Memory injection check: enabled=true, inject=Auto, workspace_root="/home/daniele/personal/learning/rustrch/rustrch-edu"
+[2m2026-02-02T17:46:43.493921Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Looking for memories at: "/home/daniele/personal/learning/rustrch/rustrch-edu/.ralph/agent/memories.md" (exists: true)
+[2m2026-02-02T17:46:43.494003Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Successfully loaded 21 memories from store
+[2m2026-02-02T17:46:43.494024Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting 21 memories (3289 chars) into prompt
+[2m2026-02-02T17:46:43.494047Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting scratchpad (104 chars) into prompt
+[2m2026-02-02T17:46:43.494095Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting ready tasks (3 ready, 3 open, 22 closed) into prompt
+[96m[1m| [0m[90m Read     [0mlezioni/05-testing/L5.07-ottimizzazione-performance.md
+[91m[1m| [0m[90m Bash     [0mConteggio parole nel file
+
+588 /home/daniele/personal/learning/rustrch/rustrch-edu/lezioni/05-testing/L5.07-ottimizzazione-performance.md
+
+[91m[1m| [0m[90m Bash     [0mEvento di approvazione per il file scritto
+
+Event emitted: review.approve
+
+
+Task completed.
+
+
+===============================================================================
+ ITERATION 15 | ? coordinator | 6m 42s elapsed | 15/300
+===============================================================================
+[2m2026-02-02T17:46:50.725311Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Memory injection check: enabled=true, inject=Auto, workspace_root="/home/daniele/personal/learning/rustrch/rustrch-edu"
+[2m2026-02-02T17:46:50.725321Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Looking for memories at: "/home/daniele/personal/learning/rustrch/rustrch-edu/.ralph/agent/memories.md" (exists: true)
+[2m2026-02-02T17:46:50.725413Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Successfully loaded 21 memories from store
+[2m2026-02-02T17:46:50.725437Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting 21 memories (3289 chars) into prompt
+[2m2026-02-02T17:46:50.725459Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting scratchpad (104 chars) into prompt
+[2m2026-02-02T17:46:50.725512Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting ready tasks (3 ready, 3 open, 22 closed) into prompt
+[93m[1m| [0m[90m Todo     [0m0 todos
+[91m[1m| [0m[90m Bash     [0mCheck for ready tasks
+
+ID                   Priority Title                                                       
+------------------------------------------------------------------------------------------
+task-1770054129-e262 5        L5.08: Parallelismo con Rayon                               
+task-1770054132-6f47 5        L5.09: Pseudocodice per crawling parallelo                  
+task-1770054135-ede2 5        L5.10: Esercizi e domande                                   
+
+[91m[1m| [0m[90m Bash     [0mShow details of the first task
+
+ID:          task-1770054129-e262
+Title:       L5.08: Parallelismo con Rayon
+Description: Introduzione a Rayon per il parallelismo
+Status:      open
+Priority:    5
+Created:     2026-02-02T17:42:09.647780500+00:00
+
+[91m[1m| [0m[90m Bash     [0mList the lessons directory
+
+total 56
+drwxr-xr-x 12 daniele daniele 4096 Feb  2 18:41 .
+drwxr-xr-x  8 daniele daniele 4096 Feb  2 18:44 ..
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 18:38 01-crawling
+drwxr-xr-x  3 daniele daniele 4096 Feb  2 14:22 01-fondamenti
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 14:54 02-setup
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 16:45 03-async
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 18:34 04-database
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 11:24 05-ml
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 18:46 05-testing
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 18:31 06-search
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 11:24 07-performance
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 11:24 08-deployment
+-rw-r--r--  1 daniele daniele 5349 Feb  2 15:35 README.md
+
+[91m[1m| [0m[90m Bash     [0mList the testing directory
+
+total 56
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 18:46 .
+drwxr-xr-x 12 daniele daniele 4096 Feb  2 18:41 ..
+-rw-r--r--  1 daniele daniele 4201 Feb  2 18:42 L5.01-introduzione-testing.md
+-rw-r--r--  1 daniele daniele 3253 Feb  2 18:43 L5.02-test-unitari.md
+-rw-r--r--  1 daniele daniele 4215 Feb  2 18:43 L5.03-pseudocodice-test-crawler.md
+-rw-r--r--  1 daniele daniele 3162 Feb  2 18:44 L5.04-test-integrazione.md
+-rw-r--r--  1 daniele daniele 4384 Feb  2 18:45 L5.05-pseudocodice-test-ricerca.md
+-rw-r--r--  1 daniele daniele 4298 Feb  2 18:45 L5.06-benchmarking.md
+-rw-r--r--  1 daniele daniele 4524 Feb  2 18:46 L5.07-ottimizzazione-performance.md
+
+[92m[1m| [0m[90m Write    [0mlezioni/05-testing/L5.08-parallelismo-rayon.md
+[91m[1m| [0m[90m Bash     [0mCount words in the generated file
+
+607 /home/daniele/personal/learning/rustrch/rustrch-edu/lezioni/05-testing/L5.08-parallelismo-rayon.md
+
+[91m[1m| [0m[90m Bash     [0mAdd memory for the completed task
+
+error: unexpected argument 'rust,' found
+
+Usage: ralph tools memory add [OPTIONS] <CONTENT>
+
+For more information, try '--help'.
+
+[91m[1m| [0m[90m Bash     [0mAdd memory for the completed task
+
+Memory stored: mem-1770054445-1e59
+
+[91m[1m| [0m[90m Bash     [0mClose the completed task
+
+Closed task: task-1770054129-e262 - L5.08: Parallelismo con Rayon
+
+[91m[1m| [0m[90m Bash     [0mEmit write.next event to continue with the next task
+
+Event emitted: write.next
+
+
+Task completato: L5.08: Parallelismo con Rayon.
+
+
+===============================================================================
+ ITERATION 16 | ? writer | 7m 21s elapsed | 16/300
+===============================================================================
+[2m2026-02-02T17:47:30.086721Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Memory injection check: enabled=true, inject=Auto, workspace_root="/home/daniele/personal/learning/rustrch/rustrch-edu"
+[2m2026-02-02T17:47:30.086731Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Looking for memories at: "/home/daniele/personal/learning/rustrch/rustrch-edu/.ralph/agent/memories.md" (exists: true)
+[2m2026-02-02T17:47:30.086836Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Successfully loaded 22 memories from store
+[2m2026-02-02T17:47:30.086860Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting 22 memories (3462 chars) into prompt
+[2m2026-02-02T17:47:30.086888Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting scratchpad (104 chars) into prompt
+[2m2026-02-02T17:47:30.086959Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting ready tasks (2 ready, 2 open, 23 closed) into prompt
+[91m[1m| [0m[90m Bash     [0mGet the first ready task
+
+[
+
+[91m[1m| [0m[90m Bash     [0mList ready tasks
+
+ID                   Priority Title                                                       
+------------------------------------------------------------------------------------------
+task-1770054132-6f47 5        L5.09: Pseudocodice per crawling parallelo                  
+task-1770054135-ede2 5        L5.10: Esercizi e domande                                   
+
+[91m[1m| [0m[90m Bash     [0mShow details of the first task
+
+ID:          task-1770054132-6f47
+Title:       L5.09: Pseudocodice per crawling parallelo
+Description: Esempio di crawling parallelo con Rayon
+Status:      open
+Priority:    5
+Created:     2026-02-02T17:42:12.814921023+00:00
+
+[94m[1m| [0m[90m Glob     [0m{"pattern":"**/lezioni/**/*.md"}
+[96m[1m| [0m[90m Read     [0mlezioni/05-testing/L5.08-parallelismo-rayon.md
+[92m[1m| [0m[90m Write    [0mlezioni/05-testing/L5.09-pseudocodice-crawling-parallelo.md
+[91m[1m| [0m[90m Bash     [0mAdd memory for completed task
+
+error: invalid value 'pedagogico' for '--type <TYPE>': Invalid memory type: 'pedagogico'. Valid types: pattern, decision, fix, context
+
+For more information, try '--help'.
+
+[91m[1m| [0m[90m Bash     [0mAdd memory for completed task
+
+Memory stored: mem-1770054478-f62d
+
+[91m[1m| [0m[90m Bash     [0mClose the completed task
+
+Closed task: task-1770054132-6f47 - L5.09: Pseudocodice per crawling parallelo
+
+[91m[1m| [0m[90m Bash     [0mEmit section.written event
+
+Event emitted: section.written
+
+
+Task completato: L5.09: Pseudocodice per crawling parallelo.
+
+
+===============================================================================
+ ITERATION 17 | ? reviewer | 7m 57s elapsed | 17/300
+===============================================================================
+[2m2026-02-02T17:48:05.568785Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Memory injection check: enabled=true, inject=Auto, workspace_root="/home/daniele/personal/learning/rustrch/rustrch-edu"
+[2m2026-02-02T17:48:05.568806Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Looking for memories at: "/home/daniele/personal/learning/rustrch/rustrch-edu/.ralph/agent/memories.md" (exists: true)
+[2m2026-02-02T17:48:05.568890Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Successfully loaded 23 memories from store
+[2m2026-02-02T17:48:05.568911Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting 23 memories (3614 chars) into prompt
+[2m2026-02-02T17:48:05.568942Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting scratchpad (104 chars) into prompt
+[2m2026-02-02T17:48:05.569006Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting ready tasks (1 ready, 1 open, 24 closed) into prompt
+[93m[1m| [0m[90m Todo     [0m0 todos
+[96m[1m| [0m[90m Read     [0mlezioni/05-testing/L5.09-pseudocodice-crawling-parallelo.md
+[91m[1m| [0m[90m Bash     [0mConta le parole nel file
+
+647 /home/daniele/personal/learning/rustrch/rustrch-edu/lezioni/05-testing/L5.09-pseudocodice-crawling-parallelo.md
+
+[91m[1m| [0m[90m Bash     [0mApprovazione della sezione scritta
+
+Event emitted: review.approve
+
+
+Task completed.
+
+
+===============================================================================
+ ITERATION 18 | ? coordinator | 8m 5s elapsed | 18/300
+===============================================================================
+[2m2026-02-02T17:48:14.164487Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Memory injection check: enabled=true, inject=Auto, workspace_root="/home/daniele/personal/learning/rustrch/rustrch-edu"
+[2m2026-02-02T17:48:14.164507Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Looking for memories at: "/home/daniele/personal/learning/rustrch/rustrch-edu/.ralph/agent/memories.md" (exists: true)
+[2m2026-02-02T17:48:14.164583Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Successfully loaded 23 memories from store
+[2m2026-02-02T17:48:14.164604Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting 23 memories (3614 chars) into prompt
+[2m2026-02-02T17:48:14.164626Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting scratchpad (104 chars) into prompt
+[2m2026-02-02T17:48:14.164675Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting ready tasks (1 ready, 1 open, 24 closed) into prompt
+[93m[1m| [0m[90m Todo     [0m0 todos
+[91m[1m| [0m[90m Bash     [0mCheck for ready tasks
+
+ID                   Priority Title                                                       
+------------------------------------------------------------------------------------------
+task-1770054135-ede2 5        L5.10: Esercizi e domande                                   
+
+[91m[1m| [0m[90m Bash     [0mShow task details
+
+ID:          task-1770054135-ede2
+Title:       L5.10: Esercizi e domande
+Description: Domande di comprensione ed esercizi pratici
+Status:      open
+Priority:    5
+Created:     2026-02-02T17:42:15.126435893+00:00
+
+[94m[1m| [0m[90m Glob     [0m{"pattern":"**/L5.10*.md"}
+[94m[1m| [0m[90m Glob     [0m{"pattern":"**/L5.09*.md"}
+[96m[1m| [0m[90m Read     [0mlezioni/05-testing/L5.09-pseudocodice-crawling-parallelo.md
+[92m[1m| [0m[90m Write    [0mlezioni/05-testing/L5.10-esercizi-e-domande.md
+[91m[1m| [0m[90m Bash     [0mAdd memory for completed task
+
+error: unexpected argument 'domande,' found
+
+Usage: ralph tools memory add [OPTIONS] <CONTENT>
+
+For more information, try '--help'.
+
+[91m[1m| [0m[90m Bash     [0mAdd memory for completed task
+
+Memory stored: mem-1770054528-15f5
+
+[91m[1m| [0m[90m Bash     [0mClose the completed task
+
+Closed task: task-1770054135-ede2 - L5.10: Esercizi e domande
+
+[91m[1m| [0m[90m Bash     [0mEmit write.next event
+
+Event emitted: write.next
+
+
+Task completato: L5.10: Esercizi e domande.
+
+
+===============================================================================
+ ITERATION 19 | ? writer | 8m 46s elapsed | 19/300
+===============================================================================
+[2m2026-02-02T17:48:54.279736Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Memory injection check: enabled=true, inject=Auto, workspace_root="/home/daniele/personal/learning/rustrch/rustrch-edu"
+[2m2026-02-02T17:48:54.279774Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Looking for memories at: "/home/daniele/personal/learning/rustrch/rustrch-edu/.ralph/agent/memories.md" (exists: true)
+[2m2026-02-02T17:48:54.279935Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Successfully loaded 24 memories from store
+[2m2026-02-02T17:48:54.279992Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting 24 memories (3792 chars) into prompt
+[2m2026-02-02T17:48:54.280041Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting scratchpad (104 chars) into prompt
+[2m2026-02-02T17:48:54.280146Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting ready tasks (0 ready, 0 open, 25 closed) into prompt
+[93m[1m| [0m[90m Todo     [0m0 todos
+[91m[1m| [0m[90m Bash     [0mCheck for ready tasks
+
+[]
+
+[91m[1m| [0m[90m Bash     [0mList all open tasks
+
+No tasks found
+
+[91m[1m| [0m[90m Bash     [0mList files in current directory
+
+total 108
+drwxr-xr-x  8 daniele daniele  4096 Feb  2 18:44 .
+drwxr-xr-x  4 daniele daniele  4096 Feb  2 12:13 ..
+drwxr-xr-x  2 daniele daniele  4096 Feb  2 11:25 .claude
+drwxr-xr-x  9 daniele daniele  4096 Feb  2 18:46 .git
+-rw-r--r--  1 daniele daniele    12 Feb  2 14:38 .gitignore
+drwxr-xr-x  5 daniele daniele  4096 Feb  2 18:27 .ralph
+-rw-r--r--  1 daniele daniele  4138 Feb  2 18:24 PROMPT.md
+-rw-r--r--  1 daniele daniele  4397 Feb  2 10:38 README.md
+-rwxr-xr-x  1 daniele daniele 10083 Feb  2 15:57 batch_create_tasks.sh
+-rw-r--r--  1 daniele daniele 10216 Feb  2 15:56 create_tasks.sh
+drwxr-xr-x 12 daniele daniele  4096 Feb  2 18:41 lezioni
+-rw-r--r--  1 daniele daniele  4574 Feb  2 18:13 lista_modelli
+-rw-r--r--  1 daniele daniele    90 Feb  2 14:41 package-lock.json
+drwxr-xr-x  2 daniele daniele  4096 Feb  2 10:38 presets
+-rw-r--r--  1 daniele daniele  2779 Feb  2 18:27 ralph.yml
+-rw-r--r--  1 daniele daniele  7998 Feb  2 14:48 ralph_monitor.py
+-rw-r--r--  1 daniele daniele  1611 Feb  2 18:44 ralph_sniffer.py
+drwxr-xr-x  8 daniele daniele  4096 Feb  2 10:38 specs
+-rw-r--r--  1 daniele daniele  1816 Feb  2 17:48 sync_tasks.py
+
+[91m[1m| [0m[90m Bash     [0mList files in lezioni directory
+
+total 56
+drwxr-xr-x 12 daniele daniele 4096 Feb  2 18:41 .
+drwxr-xr-x  8 daniele daniele 4096 Feb  2 18:44 ..
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 18:38 01-crawling
+drwxr-xr-x  3 daniele daniele 4096 Feb  2 14:22 01-fondamenti
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 14:54 02-setup
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 16:45 03-async
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 18:34 04-database
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 11:24 05-ml
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 18:48 05-testing
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 18:31 06-search
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 11:24 07-performance
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 11:24 08-deployment
+-rw-r--r--  1 daniele daniele 5349 Feb  2 15:35 README.md
+
+[91m[1m| [0m[90m Bash     [0mCount markdown files in lezioni
+
+88
+
+[91m[1m| [0m[90m Bash     [0mList files in 05-testing directory
+
+total 80
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 18:48 .
+drwxr-xr-x 12 daniele daniele 4096 Feb  2 18:41 ..
+-rw-r--r--  1 daniele daniele 4201 Feb  2 18:42 L5.01-introduzione-testing.md
+-rw-r--r--  1 daniele daniele 3253 Feb  2 18:43 L5.02-test-unitari.md
+-rw-r--r--  1 daniele daniele 4215 Feb  2 18:43 L5.03-pseudocodice-test-crawler.md
+-rw-r--r--  1 daniele daniele 3162 Feb  2 18:44 L5.04-test-integrazione.md
+-rw-r--r--  1 daniele daniele 4384 Feb  2 18:45 L5.05-pseudocodice-test-ricerca.md
+-rw-r--r--  1 daniele daniele 4298 Feb  2 18:45 L5.06-benchmarking.md
+-rw-r--r--  1 daniele daniele 4524 Feb  2 18:46 L5.07-ottimizzazione-performance.md
+-rw-r--r--  1 daniele daniele 4748 Feb  2 18:47 L5.08-parallelismo-rayon.md
+-rw-r--r--  1 daniele daniele 5208 Feb  2 18:47 L5.09-pseudocodice-crawling-parallelo.md
+-rw-r--r--  1 daniele daniele 6424 Feb  2 18:48 L5.10-esercizi-e-domande.md
+
+[91m[1m| [0m[90m Bash     [0mList files in 06-search directory
+
+total 24
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 18:31 .
+drwxr-xr-x 12 daniele daniele 4096 Feb  2 18:41 ..
+-rw-r--r--  1 daniele daniele 5935 Feb  2 18:29 L4.01-introduzione-alla-fase-di-ricerca.md
+-rw-r--r--  1 daniele daniele 6398 Feb  2 18:31 L4.04-pseudocodice-per-bm25.md
+
+[91m[1m| [0m[90m Bash     [0mList files in 04-database directory
+
+total 48
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 18:34 .
+drwxr-xr-x 12 daniele daniele 4096 Feb  2 18:41 ..
+-rw-r--r--  1 daniele daniele 5190 Feb  2 18:30 L4.02-tokenizzazione-teoria.md
+-rw-r--r--  1 daniele daniele 5090 Feb  2 18:30 L4.03-algoritmo-bm25-teoria.md
+-rw-r--r--  1 daniele daniele 4394 Feb  2 18:32 L4.05-pseudocodice-ricerca-semantica.md
+-rw-r--r--  1 daniele daniele 3758 Feb  2 18:33 L4.06-pseudocodice-ricerca-ibrida.md
+-rw-r--r--  1 daniele daniele 5197 Feb  2 18:34 L4.07-ricerca-ibrida-teoria.md
+-rw-r--r--  1 daniele daniele 2809 Feb  2 18:34 L4.08-ricerca-ibrida-esercizi.md
+
+[91m[1m| [0m[90m Bash     [0mList files in 03-async directory
+
+total 104
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 16:45 .
+drwxr-xr-x 12 daniele daniele 4096 Feb  2 18:41 ..
+-rw-r--r--  1 daniele daniele 5809 Feb  2 15:12 01-introduzione-alla-programmazione-asincrona.md
+-rw-r--r--  1 daniele daniele 4365 Feb  2 16:20 01-osservazioni-iniziali-su-setup-ambiente-rust.md
+-rw-r--r--  1 daniele daniele 5299 Feb  2 16:37 02-comandi-cargo-essenziali.md
+-rw-r--r--  1 daniele daniele 5324 Feb  2 15:18 02-differenza-sync-vs-async.md
+-rw-r--r--  1 daniele daniele 6523 Feb  2 15:27 03-il-tipo-future-in-rust.md
+-rw-r--r--  1 daniele daniele 5639 Feb  2 16:15 04-canali-comunicazione.md
+-rw-r--r--  1 daniele daniele 4672 Feb  2 15:22 04-installare-tokio-runtime.md
+-rw-r--r--  1 daniele daniele 5091 Feb  2 15:33 05-async-await.md
+-rw-r--r--  1 daniele daniele 3509 Feb  2 16:35 L3.05.md
+-rw-r--r--  1 daniele daniele 3177 Feb  2 16:04 async-01-introduzione.md
+-rw-r--r--  1 daniele daniele 3293 Feb  2 16:04 async-02-futures.md
+-rw-r--r--  1 daniele daniele 3392 Feb  2 16:04 async-03-tokio.md
+-rw-r--r--  1 daniele daniele 4392 Feb  2 16:45 l3-03-organizzazione-del-progetto-lezioni-con-rust.md
+-rw-r--r--  1 daniele daniele 4555 Feb  2 16:42 l3-06-runtime-async-con-tokio.md
+
+[91m[1m| [0m[90m Bash     [0mList files in 02-setup directory
+
+total 220
+drwxr-xr-x  2 daniele daniele  4096 Feb  2 14:54 .
+drwxr-xr-x 12 daniele daniele  4096 Feb  2 18:41 ..
+-rw-r--r--  1 daniele daniele  4523 Feb  2 14:23 01-installare-rust-con-rustup.md
+-rw-r--r--  1 daniele daniele  5699 Feb  2 14:24 02-componenti-della-toolchain-rustc-cargo-rustfmt-clippy.md
+-rw-r--r--  1 daniele daniele  5373 Feb  2 14:24 03-creare-il-primo-progetto-con-cargo-new.md
+-rw-r--r--  1 daniele daniele  6981 Feb  2 14:25 04-struttura-di-un-progetto-cargo.md
+-rw-r--r--  1 daniele daniele  7052 Feb  2 14:26 05-cargo-toml-gestione-dipendenze.md
+-rw-r--r--  1 daniele daniele  8101 Feb  2 14:28 06-cargo-toml-features-e-profili-di-compilazione.md
+-rw-r--r--  1 daniele daniele  8107 Feb  2 14:29 07-configurare-vs-code-per-rust.md
+-rw-r--r--  1 daniele daniele  9793 Feb  2 14:31 08-configurare-rust-analyzer-e-le-estensioni-utili.md
+-rw-r--r--  1 daniele daniele  6881 Feb  2 14:32 09-compilazione-e-ciclo-edit-compile-run.md
+-rw-r--r--  1 daniele daniele  7471 Feb  2 14:33 10-gestione-errori-del-compilatore-leggere-i-messaggi.md
+-rw-r--r--  1 daniele daniele  6904 Feb  2 14:34 11-cargo-build-debug-vs-release.md
+-rw-r--r--  1 daniele daniele  8311 Feb  2 14:36 12-cargo-test-scrivere-e-eseguire-test-unitari.md
+-rw-r--r--  1 daniele daniele  9293 Feb  2 14:37 13-cargo-test-test-di-integrazione-e-organizzazione.md
+-rw-r--r--  1 daniele daniele  9244 Feb  2 14:39 14-cargo-doc-generare-documentazione.md
+-rw-r--r--  1 daniele daniele  8142 Feb  2 14:40 15-clippy-linting-e-best-practices-automatiche.md
+-rw-r--r--  1 daniele daniele  7604 Feb  2 14:41 16-rustfmt-formattazione-automatica-del-codice.md
+-rw-r--r--  1 daniele daniele  7699 Feb  2 14:43 17-debug-con-println-e-dbg.md
+-rw-r--r--  1 daniele daniele  7729 Feb  2 14:45 18-debug-avanzato-con-breakpoint-e-lldbgdb.md
+-rw-r--r--  1 daniele daniele  7822 Feb  2 14:46 19-gestione-versioni-rust-con-rustup.md
+-rw-r--r--  1 daniele daniele  9293 Feb  2 14:49 20-workspace-cargo-per-progetti-multi-crate.md
+-rw-r--r--  1 daniele daniele  8420 Feb  2 14:51 21-pubblicare-su-cratesio-preparazione.md
+-rw-r--r--  1 daniele daniele 10485 Feb  2 14:52 22-continuous-integration-per-progetti-rust.md
+-rw-r--r--  1 daniele daniele  7754 Feb  2 14:54 23-configurare-git-e-gitignore-per-rust.md
+
+[91m[1m| [0m[90m Bash     [0mList files in 01-fondamenti directory
+
+total 212
+drwxr-xr-x  3 daniele daniele 4096 Feb  2 14:22 .
+drwxr-xr-x 12 daniele daniele 4096 Feb  2 18:41 ..
+drwxr-xr-x  3 daniele daniele 4096 Feb  2 12:35 .ralph
+-rw-r--r--  1 daniele daniele 4997 Feb  2 11:32 01-introduzione-a-rust-e-perche-usarlo-per-un-motore-di-ricerca.md
+-rw-r--r--  1 daniele daniele 5166 Feb  2 11:33 02-ownership-il-concetto-fondamentale.md
+-rw-r--r--  1 daniele daniele 6471 Feb  2 14:02 03-ownership-move-semantics-e-copy-trait.md
+-rw-r--r--  1 daniele daniele 5323 Feb  2 11:34 04-borrowing-riferimenti-immutabili.md
+-rw-r--r--  1 daniele daniele 5748 Feb  2 11:34 05-borrowing-riferimenti-mutabili-e-regole-del-borrow-checker.md
+-rw-r--r--  1 daniele daniele 5450 Feb  2 12:23 06-lifetime-concetti-base-e-annotazioni.md
+-rw-r--r--  1 daniele daniele 5373 Feb  2 14:04 07-lifetime-elision-e-casi-comuni.md
+-rw-r--r--  1 daniele daniele 6025 Feb  2 14:04 08-variabili-tipi-primitivi-e-type-inference.md
+-rw-r--r--  1 daniele daniele 5939 Feb  2 14:05 09-stringhe-in-rust-string-vs-str.md
+-rw-r--r--  1 daniele daniele 6511 Feb  2 14:06 10-tuple-array-e-slice.md
+-rw-r--r--  1 daniele daniele 6211 Feb  2 14:07 11-struct-definizione-e-implementazione.md
+-rw-r--r--  1 daniele daniele 6019 Feb  2 14:08 12-struct-metodi-e-funzioni-associate.md
+-rw-r--r--  1 daniele daniele 6864 Feb  2 14:09 13-enum-definizione-e-varianti-con-dati.md
+-rw-r--r--  1 daniele daniele 6872 Feb  2 14:10 14-enum-option-t-e-gestione-valori-opzionali.md
+-rw-r--r--  1 daniele daniele 7665 Feb  2 14:11 15-enum-result-t-e-e-gestione-errori.md
+-rw-r--r--  1 daniele daniele 6806 Feb  2 14:11 16-pattern-matching-con-match.md
+-rw-r--r--  1 daniele daniele 6837 Feb  2 14:12 17-pattern-matching-if-let-e-while-let.md
+-rw-r--r--  1 daniele daniele 6719 Feb  2 14:13 18-vettori-vec-t-e-operazioni-comuni.md
+-rw-r--r--  1 daniele daniele 7109 Feb  2 14:14 19-hashmap-e-collezioni.md
+-rw-r--r--  1 daniele daniele 7147 Feb  2 14:15 20-iteratori-concetti-base-e-metodi-principali.md
+-rw-r--r--  1 daniele daniele 8111 Feb  2 14:16 21-iteratori-map-filter-collect-e-catene.md
+-rw-r--r--  1 daniele daniele 6258 Feb  2 14:17 22-trait-definizione-e-implementazione.md
+-rw-r--r--  1 daniele daniele 6114 Feb  2 14:18 23-trait-trait-bounds-e-generics.md
+-rw-r--r--  1 daniele daniele 7261 Feb  2 14:20 24-closures-e-funzioni-di-ordine-superiore.md
+-rw-r--r--  1 daniele daniele 7920 Feb  2 14:22 25-moduli-e-visibilita-organizzare-il-codice.md
+
+[91m[1m| [0m[90m Bash     [0mList files in 01-crawling directory
+
+total 60
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 18:38 .
+drwxr-xr-x 12 daniele daniele 4096 Feb  2 18:41 ..
+-rw-r--r--  1 daniele daniele 4631 Feb  2 18:36 01-introduzione-alla-fase-di-crawling.md
+-rw-r--r--  1 daniele daniele 4813 Feb  2 18:36 02-la-programmazione-asincrona.md
+-rw-r--r--  1 daniele daniele 4141 Feb  2 18:37 03-gestione-dei-percorsi-in-rust.md
+-rw-r--r--  1 daniele daniele 4503 Feb  2 18:37 04-leggere-i-metadati.md
+-rw-r--r--  1 daniele daniele 4748 Feb  2 18:38 05-pseudocodice-del-crawler.md
+-rw-r--r--  1 daniele daniele 4296 Feb  2 18:38 06-spiegazione-dettagliata.md
+-rw-r--r--  1 daniele daniele 3878 Feb  2 18:38 07-esercizi-e-domande.md
+
+[91m[1m| [0m[90m Bash     [0mList files in specs directory
+
+total 32
+drwxr-xr-x 8 daniele daniele 4096 Feb  2 10:38 .
+drwxr-xr-x 8 daniele daniele 4096 Feb  2 18:44 ..
+drwxr-xr-x 2 daniele daniele 4096 Feb  2 10:38 01-crawling
+drwxr-xr-x 2 daniele daniele 4096 Feb  2 10:38 02-indicizzazione
+drwxr-xr-x 2 daniele daniele 4096 Feb  2 10:38 03-embeddings
+drwxr-xr-x 2 daniele daniele 4096 Feb  2 10:38 04-ricerca
+drwxr-xr-x 2 daniele daniele 4096 Feb  2 10:38 05-testing
+drwxr-xr-x 2 daniele daniele 4096 Feb  2 10:38 06-conclusione
+
+[91m[1m| [0m[90m Bash     [0mList files in specs/06-conclusione directory
+
+total 16
+drwxr-xr-x 2 daniele daniele 4096 Feb  2 10:38 .
+drwxr-xr-x 8 daniele daniele 4096 Feb  2 10:38 ..
+-rw-r--r-- 1 daniele daniele 5623 Feb  2 10:38 PROMPT.md
+
+[96m[1m| [0m[90m Read     [0mspecs/06-conclusione/PROMPT.md
+[91m[1m| [0m[90m Bash     [0mCreate 06-conclusione directory
+[2m2026-02-02T17:49:41.976845Z[0m [32m INFO[0m [2mralph_telegram::service[0m[2m:[0m Received Telegram message [3mchat_id[0m[2m=[0m6166789345 [3mtext[0m[2m=[0m/status
+[92m[1m| [0m[90m Write    [0mlezioni/06-conclusione/L6.01-riepilogo-del-corso.md
+[91m[1m| [0m[90m Bash     [0mAdd memory for L6.01
+
+error: invalid value 'pedagogico' for '--type <TYPE>': Invalid memory type: 'pedagogico'. Valid types: pattern, decision, fix, context
+
+For more information, try '--help'.
+
+[91m[1m| [0m[90m Bash     [0mAdd memory for L6.01
+
+Memory stored: mem-1770054601-ab86
+
+[91m[1m| [0m[90m Bash     [0mEmit section.written event
+
+Event emitted: section.written
+
+
+Task completed.
+
+
+===============================================================================
+ ITERATION 20 | ? reviewer | 9m 59s elapsed | 20/300
+===============================================================================
+[2m2026-02-02T17:50:07.506684Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Memory injection check: enabled=true, inject=Auto, workspace_root="/home/daniele/personal/learning/rustrch/rustrch-edu"
+[2m2026-02-02T17:50:07.506698Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Looking for memories at: "/home/daniele/personal/learning/rustrch/rustrch-edu/.ralph/agent/memories.md" (exists: true)
+[2m2026-02-02T17:50:07.506802Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Successfully loaded 25 memories from store
+[2m2026-02-02T17:50:07.506833Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting 25 memories (3928 chars) into prompt
+[2m2026-02-02T17:50:07.506872Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting scratchpad (104 chars) into prompt
+[2m2026-02-02T17:50:07.506933Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting ready tasks (0 ready, 0 open, 25 closed) into prompt
+[96m[1m| [0m[90m Read     [0mlezioni/06-conclusione/L6.01-riepilogo-del-corso.md
+[91m[1m| [0m[90m Bash     [0mConta le parole nel file
+
+923 /home/daniele/personal/learning/rustrch/rustrch-edu/lezioni/06-conclusione/L6.01-riepilogo-del-corso.md
+
+[94m[1m| [0m[90m invalid  [0mInvalid Tool
+[91m[1m| [0m[90m Bash     [0mEvento di approvazione
+[91m[1m| [0m[90m Bash     [0mEvento di approvazione
+
+review.approve
+
+
+Task completed.
+
+
+===============================================================================
+ ITERATION 21 | ? ralph | 10m 10s elapsed | 21/300
+===============================================================================
+[2m2026-02-02T17:50:18.282909Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Memory injection check: enabled=true, inject=Auto, workspace_root="/home/daniele/personal/learning/rustrch/rustrch-edu"
+[2m2026-02-02T17:50:18.282935Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Looking for memories at: "/home/daniele/personal/learning/rustrch/rustrch-edu/.ralph/agent/memories.md" (exists: true)
+[2m2026-02-02T17:50:18.283056Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Successfully loaded 25 memories from store
+[2m2026-02-02T17:50:18.283083Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting 25 memories (3928 chars) into prompt
+[2m2026-02-02T17:50:18.283130Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting scratchpad (104 chars) into prompt
+[2m2026-02-02T17:50:18.283207Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting ready tasks (0 ready, 0 open, 25 closed) into prompt
+[94m[1m| [0m[90m invalid  [0mInvalid Tool
+[93m[1m| [0m[90m Todo     [0m0 todos
+[93m[1m| [0m[90m Todo     [0m3 todos
+[91m[1m| [0m[90m Bash     [0mElenca i file markdown esistenti nel progetto
+
+./PROMPT.md
+./README.md
+./.ralph/agent/summary.md
+./.ralph/agent/scratchpad.md
+./.ralph/agent/memories.md
+./specs/04-ricerca/PROMPT.md
+./specs/06-conclusione/PROMPT.md
+./specs/03-embeddings/PROMPT.md
+./specs/01-crawling/PROMPT.md
+./specs/02-indicizzazione/PROMPT.md
+./specs/05-testing/PROMPT.md
+./lezioni/06-search/L4.01-introduzione-alla-fase-di-ricerca.md
+./lezioni/06-search/L4.04-pseudocodice-per-bm25.md
+./lezioni/06-conclusione/L6.01-riepilogo-del-corso.md
+./lezioni/01-crawling/07-esercizi-e-domande.md
+./lezioni/01-crawling/02-la-programmazione-asincrona.md
+./lezioni/01-crawling/06-spiegazione-dettagliata.md
+./lezioni/01-crawling/04-leggere-i-metadati.md
+./lezioni/01-crawling/03-gestione-dei-percorsi-in-rust.md
+./lezioni/01-crawling/01-introduzione-alla-fase-di-crawling.md
+
+[94m[1m| [0m[90m Glob     [0m{"pattern":"**/*.md"}
+[96m[1m| [0m[90m Read     [0mREADME.md
+[96m[1m| [0m[90m Read     [0mlezioni/README.md
+[94m[1m| [0m[90m Glob     [0m{"pattern":"specs/**/*.md"}
+[96m[1m| [0m[90m Read     [0mspecs/01-crawling/PROMPT.md
+[96m[1m| [0m[90m Read     [0mspecs/02-indicizzazione/PROMPT.md
+[96m[1m| [0m[90m Read     [0mspecs/03-embeddings/PROMPT.md
+[96m[1m| [0m[90m Read     [0mspecs/04-ricerca/PROMPT.md
+[96m[1m| [0m[90m Read     [0mspecs/05-testing/PROMPT.md
+[96m[1m| [0m[90m Read     [0mspecs/06-conclusione/PROMPT.md
+[93m[1m| [0m[90m Todo     [0m3 todos
+[93m[1m| [0m[90m Todo     [0m2 todos
+[94m[1m| [0m[90m Glob     [0m{"pattern":"lezioni/**/*.md"}
+[93m[1m| [0m[90m Todo     [0m1 todos
+[91m[1m| [0m[90m Bash     [0mConta il numero totale di file markdown nelle lezioni
+
+89
+
+[91m[1m| [0m[90m Bash     [0mElenca le directory delle lezioni
+
+total 60
+drwxr-xr-x 13 daniele daniele 4096 Feb  2 18:49 .
+drwxr-xr-x  8 daniele daniele 4096 Feb  2 18:44 ..
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 18:38 01-crawling
+drwxr-xr-x  3 daniele daniele 4096 Feb  2 14:22 01-fondamenti
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 14:54 02-setup
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 16:45 03-async
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 18:34 04-database
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 11:24 05-ml
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 18:48 05-testing
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 18:49 06-conclusione
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 18:31 06-search
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 11:24 07-performance
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 11:24 08-deployment
+-rw-r--r--  1 daniele daniele 5349 Feb  2 15:35 README.md
+
+[91m[1m| [0m[90m Bash     [0mVerifica il contenuto della directory ml
+
+total 8
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 11:24 .
+drwxr-xr-x 13 daniele daniele 4096 Feb  2 18:49 ..
+
+[91m[1m| [0m[90m Bash     [0mVerifica il contenuto della directory performance
+
+total 8
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 11:24 .
+drwxr-xr-x 13 daniele daniele 4096 Feb  2 18:49 ..
+
+[91m[1m| [0m[90m Bash     [0mVerifica il contenuto della directory deployment
+
+total 8
+drwxr-xr-x  2 daniele daniele 4096 Feb  2 11:24 .
+drwxr-xr-x 13 daniele daniele 4096 Feb  2 18:49 ..
+
+[93m[1m| [0m[90m Todo     [0m3 todos
+[93m[1m| [0m[90m Todo     [0m3 todos
+[92m[1m| [0m[90m Write    [0mlezioni/05-ml/L3.01-introduzione-alla-fase-di-embedding.md
+[92m[1m| [0m[90m Write    [0mlezioni/05-ml/L3.02-cos-e-un-embedding.md
+[92m[1m| [0m[90m Write    [0mlezioni/05-ml/L3.03-machine-learning-in-rust.md
+[2m2026-02-02T17:52:59.583327Z[0m [32m INFO[0m [2mralph_telegram::service[0m[2m:[0m Received Telegram message [3mchat_id[0m[2m=[0m6166789345 [3mtext[0m[2m=[0m/tail
+[92m[1m| [0m[90m Write    [0mlezioni/05-ml/L3.04-pseudocodice-per-generare-embedding.md
+[2m2026-02-02T17:53:14.237077Z[0m [32m INFO[0m [2mralph_telegram::service[0m[2m:[0m Received Telegram message [3mchat_id[0m[2m=[0m6166789345 [3mtext[0m[2m=[0m/memories
+[2m2026-02-02T17:53:19.975084Z[0m [32m INFO[0m [2mralph_telegram::service[0m[2m:[0m Received Telegram message [3mchat_id[0m[2m=[0m6166789345 [3mtext[0m[2m=[0m/tasks
+[92m[1m| [0m[90m Write    [0mlezioni/05-ml/L3.05-similarita-del-coseno.md
+[92m[1m| [0m[90m Write    [0mlezioni/05-ml/L3.06-pseudocodice-per-calcolare-similarita.md
+[92m[1m| [0m[90m Write    [0mlezioni/05-ml/L3.07-esercizi-e-domande.md
+[93m[1m| [0m[90m Todo     [0m2 todos
+[92m[1m| [0m[90m Write    [0mlezioni/07-performance/L7.01-introduzione-alla-fase-di-performance.md
+[2m2026-02-02T17:54:46.255132Z[0m [32m INFO[0m [2mralph_telegram::service[0m[2m:[0m Received Telegram message [3mchat_id[0m[2m=[0m6166789345 [3mtext[0m[2m=[0m/status
+[92m[1m| [0m[90m Write    [0mlezioni/07-performance/L7.02-benchmarking.md
+[92m[1m| [0m[90m Write    [0mlezioni/07-performance/L7.03-ottimizzazione-performance.md
+[2m2026-02-02T17:55:38.208294Z[0m [32m INFO[0m [2mralph_telegram::service[0m[2m:[0m Received Telegram message [3mchat_id[0m[2m=[0m6166789345 [3mtext[0m[2m=[0m/tail
+[92m[1m| [0m[90m Write    [0mlezioni/07-performance/L7.04-caching.md
+[92m[1m| [0m[90m Write    [0mlezioni/07-performance/L7.05-parallelismo.md
+[92m[1m| [0m[90m Write    [0mlezioni/07-performance/L7.06-esercizi-e-domande.md
+[93m[1m| [0m[90m Todo     [0m1 todos
+[92m[1m| [0m[90m Write    [0mlezioni/08-deployment/L8.01-introduzione-alla-fase-di-deployment.md
+[92m[1m| [0m[90m Write    [0mlezioni/08-deployment/L8.02-build-release.md
+[92m[1m| [0m[90m Write    [0mlezioni/08-deployment/L8.03-ottimizzazioni.md
+[92m[1m| [0m[90m Write    [0mlezioni/08-deployment/L8.04-risorse.md
+[92m[1m| [0m[90m Write    [0mlezioni/08-deployment/L8.05-faq.md
+[93m[1m| [0m[90m Todo     [0m0 todos
+[91m[1mError: [0mThis request requires more credits, or fewer max_tokens. You requested up to 32000 tokens, but can only afford 19836. To increase, visit https://openrouter.ai/settings/credits and add more credits
+
+===============================================================================
+ ITERATION 22 | ? ralph | 17m 40s elapsed | 22/300
+===============================================================================
+[2m2026-02-02T17:57:49.125566Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Memory injection check: enabled=true, inject=Auto, workspace_root="/home/daniele/personal/learning/rustrch/rustrch-edu"
+[2m2026-02-02T17:57:49.125597Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Looking for memories at: "/home/daniele/personal/learning/rustrch/rustrch-edu/.ralph/agent/memories.md" (exists: true)
+[2m2026-02-02T17:57:49.125762Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Successfully loaded 25 memories from store
+[2m2026-02-02T17:57:49.125842Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting 25 memories (3928 chars) into prompt
+[2m2026-02-02T17:57:49.125972Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting scratchpad (104 chars) into prompt
+[2m2026-02-02T17:57:49.126085Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting ready tasks (0 ready, 0 open, 25 closed) into prompt
+[91m[1mError: [0mThis request requires more credits, or fewer max_tokens. You requested up to 32000 tokens, but can only afford 16908. To increase, visit https://openrouter.ai/settings/credits and add more credits
+
+===============================================================================
+ ITERATION 23 | ? ralph | 17m 42s elapsed | 23/300
+===============================================================================
+[2m2026-02-02T17:57:50.512098Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Memory injection check: enabled=true, inject=Auto, workspace_root="/home/daniele/personal/learning/rustrch/rustrch-edu"
+[2m2026-02-02T17:57:50.512147Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Looking for memories at: "/home/daniele/personal/learning/rustrch/rustrch-edu/.ralph/agent/memories.md" (exists: true)
+[2m2026-02-02T17:57:50.512443Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Successfully loaded 25 memories from store
+[2m2026-02-02T17:57:50.512545Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting 25 memories (3928 chars) into prompt
+[2m2026-02-02T17:57:50.512636Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting scratchpad (104 chars) into prompt
+[2m2026-02-02T17:57:50.512825Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting ready tasks (0 ready, 0 open, 25 closed) into prompt
+[91m[1mError: [0mThis request requires more credits, or fewer max_tokens. You requested up to 32000 tokens, but can only afford 16908. To increase, visit https://openrouter.ai/settings/credits and add more credits
+
+===============================================================================
+ ITERATION 24 | ? ralph | 17m 43s elapsed | 24/300
+===============================================================================
+[2m2026-02-02T17:57:51.438063Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Memory injection check: enabled=true, inject=Auto, workspace_root="/home/daniele/personal/learning/rustrch/rustrch-edu"
+[2m2026-02-02T17:57:51.438084Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Looking for memories at: "/home/daniele/personal/learning/rustrch/rustrch-edu/.ralph/agent/memories.md" (exists: true)
+[2m2026-02-02T17:57:51.438186Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Successfully loaded 25 memories from store
+[2m2026-02-02T17:57:51.438214Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting 25 memories (3928 chars) into prompt
+[2m2026-02-02T17:57:51.438244Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting scratchpad (104 chars) into prompt
+[2m2026-02-02T17:57:51.438353Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting ready tasks (0 ready, 0 open, 25 closed) into prompt
+[91m[1mError: [0mThis request requires more credits, or fewer max_tokens. You requested up to 32000 tokens, but can only afford 16908. To increase, visit https://openrouter.ai/settings/credits and add more credits
+
+===============================================================================
+ ITERATION 25 | ? ralph | 17m 44s elapsed | 25/300
+===============================================================================
+[2m2026-02-02T17:57:52.420393Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Memory injection check: enabled=true, inject=Auto, workspace_root="/home/daniele/personal/learning/rustrch/rustrch-edu"
+[2m2026-02-02T17:57:52.420476Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Looking for memories at: "/home/daniele/personal/learning/rustrch/rustrch-edu/.ralph/agent/memories.md" (exists: true)
+[2m2026-02-02T17:57:52.420937Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Successfully loaded 25 memories from store
+[2m2026-02-02T17:57:52.421077Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting 25 memories (3928 chars) into prompt
+[2m2026-02-02T17:57:52.421197Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting scratchpad (104 chars) into prompt
+[2m2026-02-02T17:57:52.421481Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Injecting ready tasks (0 ready, 0 open, 25 closed) into prompt
+[91m[1mError: [0mThis request requires more credits, or fewer max_tokens. You requested up to 32000 tokens, but can only afford 16908. To increase, visit https://openrouter.ai/settings/credits and add more credits
+[2m2026-02-02T17:57:53.812091Z[0m [32m INFO[0m [2mralph_telegram::service[0m[2m:[0m Sent farewell to chat 6166789345
+[2m2026-02-02T17:57:53.812119Z[0m [32m INFO[0m [2mralph_telegram::service[0m[2m:[0m Telegram service stopped [3mworkspace[0m[2m=[0m/home/daniele/personal/learning/rustrch/rustrch-edu
+[2m2026-02-02T17:57:53.812199Z[0m [32m INFO[0m [2mralph_core::event_loop[0m[2m:[0m Wrapping up: consecutive_failures. 25 iterations in 17m 45s. [3mreason[0m[2m=[0mconsecutive_failures [3miterations[0m[2m=[0m25 [3mduration[0m[2m=[0m17m 45s
+
++----------------------------------------------------------+
+| ? Loop terminated: Too many consecutive failures
++----------------------------------------------------------+
+|   Iterations:  25
+|   Elapsed:     1065.6s
++----------------------------------------------------------+

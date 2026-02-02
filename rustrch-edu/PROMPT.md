@@ -1,254 +1,111 @@
-# ============================================================================
-# PROMPT PRINCIPALE - MOTORE DI RICERCA PERSONALE IN RUST (EDIZIONE DIDATTICA)
-# ============================================================================
-# 
-# Questo è il prompt principale per Ralph Orchestrator.
-# Obiettivo: Generare materiale educativo completo in italiano.
-# 
-# REGOLA SUPREMA: ZERO codice eseguibile. Solo documentazione, pseudocodice,
-# spiegazioni teoriche e risorse di apprendimento.
-# ============================================================================
+# Generazione Corso Rust - Motore di Ricerca
 
-## 📚 BENVENUTO, AGENTE DIDATTICO
+## Obiettivo
 
-Stai per creare un **corso completo di Rust** sotto forma di documentazione
-per costruire un motore di ricerca personale. Questo non è un progetto software
-da implementare, ma un **percorso di apprendimento** per uno studente.
+Generare 200+ micro-sezioni didattiche (300-500 parole ciascuna) in italiano
+per un corso completo su "Costruire un Motore di Ricerca (per cli) in Rust".
+Target: 150 file .md totali tra le lezioni.
 
----
+## Pubblico
 
-## 🎯 OBIETTIVO FINALE
+Studente italiano che conosce Python/JavaScript base, mai usato Rust,
+vuole imparare costruendo un progetto reale.
 
-Generare una repository `rustrch-edu/` contenente:
+## Regole di Generazione
 
-```
-rustrch-edu/
-├── README.md                    # Indice del corso
-├── lezione/                     # Tutto il materiale didattico
-│   ├── 01-crawling/
-│   │   ├── 01-introduzione.md
-│   │   ├── 02-concetti-rust.md
-│   │   ├── 03-pseudocodice.md
-│   │   ├── 04-spiegazione-dettagliata.md
-│   │   ├── 05-risorse.md
-│   │   └── 06-esercizi.md
-│   ├── 02-indicizzazione/
-│   ├── 03-embeddings/
-│   ├── 04-ricerca/
-│   ├── 05-testing/
-│   └── 06-conclusione/
-└── specs/                       # Brief per ogni fase (già presenti)
-```
+### Lingua
+- Tutto il testo in italiano
+- Parole inglesi permesse SOLO dentro blocchi di codice
+- Nomi tecnici Rust (ownership, borrowing, trait) accettati come termini tecnici
 
----
+### Formato Obbligatorio per ogni sezione
 
-## 📋 STRUTTURA DELLE 6 FASI
+Ogni file .md DEVE avere queste 5 sezioni:
 
-### FASE 1: Crawling del File System
-**Concetti Rust da insegnare:**
-- I/O asincrono con `tokio`
-- Funzioni ricorsive
-- Gestione dei percorsi con `std::path`
-- Metadati dei file
+1. `## Teoria` - Spiegazione concetto (150+ parole)
+2. `## Esempio` - Caso d'uso pratico (100+ parole)
+3. `## Pseudocodice` - Blocco ```rust con codice commentato (//)
+4. `## Risorse` - Minimo 3 link a documentazione reale
+5. `## Esercizio` - Domanda pratica con traccia di soluzione
 
-**Output atteso:**
-- Spiegazione teorica dell'I/O asincrono
-- Pseudocodice per esplorare directory
-- Spiegazione di `tokio::fs::read_dir`
-- Link a documentazione tokio
+### Pseudocodice
+- SOLO pseudocodice commentato con `//` su ogni riga
+- NON deve essere compilabile
+- Serve per illustrare concetti, non per eseguire
 
----
+### Wordcount
+- Minimo 300 parole per sezione
+- Massimo 500/600 parole (oltre potrebbe diventare troppo denso)
 
-### FASE 2: Indicizzazione con SQLite
-**Concetti Rust da insegnare:**
-- Database SQLite con `rusqlite`
-- Serializzazione con `serde`
-- Strutture dati (`struct`)
-- Error handling (`Result`)
+## Roadmap Tecnica (specs/)
 
-**Output atteso:**
-- Spiegazione di SQLite in Rust
-- Pseudocodice per schema database
-- Spiegazione di `serde` per JSON
-- Link a documentazione rusqlite
+Il corso segue una progressione tecnica definita nei file in `specs/`. 
+L'Architect deve usare questi file per definire i titoli e gli obiettivi dei task:
+- `specs/01-crawling/`: Teoria asincrona e file system.
+- `specs/02-indicizzazione/`: Strutture dati, Inverted Index.
+- `specs/03-embeddings/`: ML, Vettori, AI.
+- `specs/04-ricerca/`: Algoritmi di ranking, BM25.
+- `specs/05-testing/`: Qualità del codice.
+- `specs/06-conclusione/`: Cleanup e futuro.
 
----
+## Gestione Contesto per Sessioni Lunghe
 
-### FASE 3: Generazione di Embedding
-**Concetti Rust da insegnare:**
-- Machine Learning in Rust
-- ONNX Runtime con `ort`
-- Vettori e array
-- Similarità del coseno (teoria)
+Questa generazione dura 8 ore. Il contesto si resetta ad ogni iterazione.
+Per evitare allucinazioni e mantenere coerenza:
 
-**Output atteso:**
-- Spiegazione degli embedding (cosa sono e a cosa servono)
-- Pseudocodice per caricare modello ONNX
-- Spiegazione della similarità vettoriale
-- Link a risorse ML in Rust
+### Uso delle Memories
 
----
-
-### FASE 4: Motore di Ricerca (BM25 + Semantico)
-**Concetti Rust da insegnare:**
-- Algoritmo BM25 (teoria)
-- Ricerca full-text
-- Combinazione di score
-- Ordinamento risultati
-
-**Output atteso:**
-- Spiegazione teorica di BM25
-- Pseudocodice per ricerca combinata
-- Spiegazione di come funziona la ricerca ibrida
-- Link a risorse su information retrieval
-
----
-
-### FASE 5: Testing e Ottimizzazione
-**Concetti Rust da insegnare:**
-- Testing in Rust (`#[test]`)
-- Benchmarking
-- Ottimizzazione performance
-- Parallelismo con `rayon`
-
-**Output atteso:**
-- Spiegazione del testing in Rust
-- Pseudocodice per test del motore
-- Spiegazione delle ottimizzazioni
-- Link a Rust Performance Book
-
----
-
-### FASE 6: Conclusione e Risorse
-**Output atteso:**
-- Riepilogo di tutto il corso
-- Percorso consigliato per continuare
-- Risorse aggiuntive
-- Progetti simili da esplorare
-
----
-
-## 📝 FORMATO STANDARD PER OGNI SEZIONE
-
-Ogni file `.md` generato deve seguire questo template:
-
-```markdown
-# Titolo della Sezione (in italiano)
-
-## 📖 Obiettivo di Apprendimento
-Cosa imparerà lo studente da questa sezione.
-
-## 🧠 Concetti Teorici
-Spiegazione dettagliata del concetto Rust.
-
-## 📝 Pseudocodice
-```plaintext
-funzione esempio(parametro):
-    se condizione:
-        restituisci valore
-    altrimenti:
-        restituisci altro
-```
-
-## 🔍 Spiegazione del Pseudocodice
-Riga per riga, spiega cosa fa ogni parte.
-
-## 💡 Esempio in Rust (commentato)
-```rust
-// Questo è un esempio didattico, NON codice eseguibile
-// struct FileMetadata {
-//     nome: String,
-//     percorso: PathBuf,
-// }
-```
-
-## 📚 Risorse per Approfondire
-- [Link 1 - Documentazione ufficiale]
-- [Link 2 - Tutorial]
-- [Link 3 - Libro/corso]
-
-## ❓ Domande di Verifica
-1. Domanda 1?
-2. Domanda 2?
-3. Domanda 3?
-
-## ✏️ Esercizi Proposti
-1. Esercizio 1: ...
-2. Esercizio 2: ...
-```
-
----
-
-## ⚠️ REGOLE FONDAMENTALI (LEGGERE ATTENTAMENTE)
-
-### 1. LINGUA: SOLO ITALIANO
-- ❌ NO: "This function returns..."
-- ✅ SI: "Questa funzione restituisce..."
-- ❌ NO: "File not found"
-- ✅ SI: "File non trovato"
-- ❌ NO titoli in inglese: "Introduction"
-- ✅ SI titoli in italiano: "Introduzione"
-
-### 2. ZERO CODICE ESEGUIBILE
-- ❌ NO file `.rs` compilabili
-- ❌ NO `Cargo.toml` funzionante
-- ✅ SI pseudocodice in italiano
-- ✅ SI esempi Rust commentati (con `//` davanti a ogni riga)
-- ✅ SI spiegazioni teoriche
-
-### 3. OBIETTIVO DIDATTICO
-- Ogni sezione deve insegnare qualcosa
-- Spiega IL PERCHÉ, non solo IL COME
-- Mettiti nei panni di uno studente alle prime armi
-- Anticipa domande e dubbi
-
-### 4. SUBTASK GRANULARI
-- Ogni task deve essere completabile in 15-20 minuti
-- Più task piccoli = meglio di pochi task grandi
-- Questo allunga il loop totale a 3-4 ore
-
----
-
-## 🔄 FLUSSO DI LAVORO
-
-1. **Planner** analizza la fase corrente → crea task granulari
-2. **Writer** scrive una sezione → salva in `lezione/XX-fase/`
-3. **Reviewer** verifica qualità → approva o richiede correzioni
-4. **Teacher** crea esercizi → prepara transizione
-5. Se ci sono altre sezioni: torna a Planner
-6. Se la fase è completa: passa alla fase successiva
-7. Se tutte le fasi sono complete: `LOOP_COMPLETE`
-
----
-
-## 📁 DIRECTORY DI LAVORO
-
-- **Input:** `specs/01-crawling/` → `specs/06-conclusione/`
-- **Output:** `lezione/01-crawling/` → `lezione/06-conclusione/`
-- **Scratchpad:** `.ralph/scratchpad.md` (note di lavoro)
-
----
-
-## 🚀 COMANDO PER INIZIARE
+Ad ogni iterazione significativa, salva informazioni chiave:
 
 ```bash
-ralph run -c ralph.yml -p "Inizia la lezione sul motore di ricerca in Rust"
+# Dopo aver scritto una sezione che introduce un concetto riusato dopo
+ralph tools memory add "L1: Ownership spiegato con metafora del libro prestato"
+
+# Dopo un checkpoint
+ralph tools memory add "Checkpoint: 50 sezioni, 17000 parole. Stile consolidato."
+
+# Se scopri un pattern che funziona
+ralph tools memory add "Pattern: iniziare Teoria con domanda retorica migliora il flusso"
 ```
 
----
+Le memories vengono iniettate automaticamente ad ogni nuova iterazione
+(budget: 3000 token). Questo mantiene la coerenza stilistica.
 
-## 📊 CRITERI DI COMPLETAMENTO
+### Anti-Allucinazione
 
-La lezione è completa quando:
-- [ ] Tutte le 6 fasi hanno documentazione completa
-- [ ] Ogni fase ha almeno 6 file .md
-- [ ] Tutto è in italiano
-- [ ] Non c'è codice eseguibile (solo pseudocodice)
-- [ ] Ci sono esercizi e domande per ogni sezione
-- [ ] `lezione/README.md` è stato creato
-- [ ] `lezione/CONCLUSIONE.md` è stato creato
+1. **Verifica sempre i task**: usa `ralph tools task ready` per sapere cosa scrivere
+2. **Non inventare task**: scrivi SOLO il task assegnato, non aggiungere contenuto extra
+3. **Link reali**: usa solo URL che conosci essere validi (docs.rust-lang.org, crates.io, doc.rust-lang.org/book/)
+4. **Rileggi il file prima di chiudere**: verifica che il contenuto sia coerente con il titolo del task
 
----
+### Risorse Sicure (URL verificati)
 
-**BUON LAVORO, AGENTE DIDATTICO!** 📚✨
-Insegna Rust con passione e chiarezza.
+Usa preferibilmente questi domini per i link:
+- `https://doc.rust-lang.org/book/` - The Rust Book
+- `https://doc.rust-lang.org/std/` - Standard Library docs
+- `https://doc.rust-lang.org/rust-by-example/` - Rust by Example
+- `https://crates.io/crates/` - Crates.io
+- `https://docs.rs/` - Documentazione crate
+- `https://tokio.rs/` - Tokio async runtime
+- `https://github.com/rust-lang/` - Repository ufficiali
+
+## Directory di Output
+
+```
+lezioni/
+  01-fondamenti/    # L1: Ownership, borrowing, struct, enum, pattern matching
+  02-setup/         # L2: Installazione, cargo, IDE, toolchain, debug
+  03-async/         # L3: Async/await, tokio, crawling, error handling
+  04-database/      # L4: SQLite, rusqlite, serde, transazioni, indici
+  05-ml/            # L5: Embedding, ONNX, vector ops, similarity
+  06-search/        # L6: Tokenization, BM25, inverted index, ranking
+  07-performance/   # L7: Rayon, caching, benchmarking, memory, profiling
+  08-deployment/    # L8: Build release, ottimizzazioni, risorse, FAQ
+```
+
+## Completamento
+
+Il corso e' completo quando:
+- 150/200 file .md generati
+- Ogni file passa tutti i gate del reviewer
+- README.md con indice generato dal coordinator

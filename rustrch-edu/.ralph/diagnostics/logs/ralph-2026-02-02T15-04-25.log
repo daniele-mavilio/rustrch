@@ -1,0 +1,55 @@
+2026-02-02T14:04:25.179463Z  INFO ralph_telegram::service: Telegram service starting bot_token=8591...7aFo workspace=/home/daniele/personal/learning/rustrch/rustrch-edu timeout_secs=120
+2026-02-02T14:04:25.357071Z  INFO ralph_telegram::service: Registered bot commands with Telegram API
+2026-02-02T14:04:25.357095Z  INFO ralph_telegram::service: Telegram polling task started loop_id=main
+2026-02-02T14:04:25.411047Z  INFO ralph_telegram::service: Sent greeting to chat 6166789345
+2026-02-02T14:04:25.411084Z  INFO ralph_telegram::service: Telegram service started — polling for incoming messages
+2026-02-02T14:04:25.411090Z  INFO ralph::loop_runner: Robot human-in-the-loop service active bot_token=8591...7aFo timeout_secs=120
+2026-02-02T14:04:25.488550Z  INFO ralph_telegram::service: Received Telegram message chat_id=6166789345 text=Ciao
+2026-02-02T14:04:25.493669Z  INFO ralph_telegram::handler: wrote human.guidance event for loop main topic="human.guidance" target_loop="main"
+2026-02-02T14:04:25.512782Z  INFO ralph_core::event_loop: Memory injection check: enabled=true, inject=Auto, workspace_root="/home/daniele/personal/learning/rustrch/rustrch-edu"
+2026-02-02T14:04:25.512808Z  INFO ralph_core::event_loop: Looking for memories at: "/home/daniele/personal/learning/rustrch/rustrch-edu/.ralph/agent/memories.md" (exists: false)
+2026-02-02T14:04:25.512813Z  INFO ralph_core::event_loop: Successfully loaded 0 memories from store
+2026-02-02T14:04:25.512815Z  INFO ralph_core::event_loop: Memory store is empty - no memories to inject
+2026-02-02T14:05:54.266625Z  INFO ralph_core::event_loop: Persisted human guidance to scratchpad count=1
+2026-02-02T14:05:54.266680Z  INFO ralph_core::event_loop: Memory injection check: enabled=true, inject=Auto, workspace_root="/home/daniele/personal/learning/rustrch/rustrch-edu"
+2026-02-02T14:05:54.266686Z  INFO ralph_core::event_loop: Looking for memories at: "/home/daniele/personal/learning/rustrch/rustrch-edu/.ralph/agent/memories.md" (exists: false)
+2026-02-02T14:05:54.266689Z  INFO ralph_core::event_loop: Successfully loaded 0 memories from store
+2026-02-02T14:05:54.266690Z  INFO ralph_core::event_loop: Memory store is empty - no memories to inject
+2026-02-02T14:05:54.266703Z  INFO ralph_core::event_loop: Injecting scratchpad (52 chars) into prompt
+2026-02-02T14:07:37.491907Z  INFO ralph_telegram::service: Received Telegram message chat_id=6166789345 text=/status
+2026-02-02T14:07:40.782521Z  INFO ralph_telegram::service: Received Telegram message chat_id=6166789345 text=/tasks
+2026-02-02T14:07:43.318983Z  INFO ralph_telegram::service: Received Telegram message chat_id=6166789345 text=/memories
+2026-02-02T14:07:55.634978Z  INFO ralph_core::event_loop: Memory injection check: enabled=true, inject=Auto, workspace_root="/home/daniele/personal/learning/rustrch/rustrch-edu"
+2026-02-02T14:07:55.635016Z  INFO ralph_core::event_loop: Looking for memories at: "/home/daniele/personal/learning/rustrch/rustrch-edu/.ralph/agent/memories.md" (exists: false)
+2026-02-02T14:07:55.635021Z  INFO ralph_core::event_loop: Successfully loaded 0 memories from store
+2026-02-02T14:07:55.635024Z  INFO ralph_core::event_loop: Memory store is empty - no memories to inject
+2026-02-02T14:07:55.635048Z  INFO ralph_core::event_loop: Injecting scratchpad (52 chars) into prompt
+2026-02-02T14:10:56.978110Z  INFO ralph_core::event_loop: Memory injection check: enabled=true, inject=Auto, workspace_root="/home/daniele/personal/learning/rustrch/rustrch-edu"
+2026-02-02T14:10:56.978140Z  INFO ralph_core::event_loop: Looking for memories at: "/home/daniele/personal/learning/rustrch/rustrch-edu/.ralph/agent/memories.md" (exists: false)
+2026-02-02T14:10:56.978144Z  INFO ralph_core::event_loop: Successfully loaded 0 memories from store
+2026-02-02T14:10:56.978146Z  INFO ralph_core::event_loop: Memory store is empty - no memories to inject
+2026-02-02T14:10:56.978159Z  INFO ralph_core::event_loop: Injecting scratchpad (695 chars) into prompt
+2026-02-02T14:10:56.978201Z  INFO ralph_core::event_loop: Injecting ready tasks (4 ready, 4 open, 0 closed) into prompt
+2026-02-02T14:12:33.543567Z  INFO ralph_core::event_loop: Memory injection check: enabled=true, inject=Auto, workspace_root="/home/daniele/personal/learning/rustrch/rustrch-edu"
+2026-02-02T14:12:33.543602Z  INFO ralph_core::event_loop: Looking for memories at: "/home/daniele/personal/learning/rustrch/rustrch-edu/.ralph/agent/memories.md" (exists: false)
+2026-02-02T14:12:33.543606Z  INFO ralph_core::event_loop: Successfully loaded 0 memories from store
+2026-02-02T14:12:33.543607Z  INFO ralph_core::event_loop: Memory store is empty - no memories to inject
+2026-02-02T14:12:33.543625Z  INFO ralph_core::event_loop: Injecting scratchpad (695 chars) into prompt
+2026-02-02T14:12:33.543652Z  INFO ralph_core::event_loop: Injecting ready tasks (3 ready, 3 open, 1 closed) into prompt
+2026-02-02T14:13:12.608075Z  INFO ralph_telegram::service: Received Telegram message chat_id=6166789345 text=/memories
+2026-02-02T14:13:15.939562Z  INFO ralph_telegram::service: Received Telegram message chat_id=6166789345 text=/tail
+2026-02-02T14:13:23.465791Z  INFO ralph_telegram::service: Received Telegram message chat_id=6166789345 text=/status
+2026-02-02T14:13:28.156398Z  INFO ralph_telegram::service: Received Telegram message chat_id=6166789345 text=/tasks
+2026-02-02T14:13:42.786293Z  INFO ralph_core::event_loop: Memory injection check: enabled=true, inject=Auto, workspace_root="/home/daniele/personal/learning/rustrch/rustrch-edu"
+2026-02-02T14:13:42.786319Z  INFO ralph_core::event_loop: Looking for memories at: "/home/daniele/personal/learning/rustrch/rustrch-edu/.ralph/agent/memories.md" (exists: true)
+2026-02-02T14:13:42.787131Z  INFO ralph_core::event_loop: Successfully loaded 1 memories from store
+2026-02-02T14:13:42.787146Z  INFO ralph_core::event_loop: Injecting 1 memories (187 chars) into prompt
+2026-02-02T14:13:42.787164Z  INFO ralph_core::event_loop: Injecting scratchpad (695 chars) into prompt
+2026-02-02T14:13:42.787190Z  INFO ralph_core::event_loop: Injecting ready tasks (3 ready, 3 open, 1 closed) into prompt
+2026-02-02T14:13:59.332439Z  INFO ralph_core::event_loop: Memory injection check: enabled=true, inject=Auto, workspace_root="/home/daniele/personal/learning/rustrch/rustrch-edu"
+2026-02-02T14:13:59.332460Z  INFO ralph_core::event_loop: Looking for memories at: "/home/daniele/personal/learning/rustrch/rustrch-edu/.ralph/agent/memories.md" (exists: true)
+2026-02-02T14:13:59.332498Z  INFO ralph_core::event_loop: Successfully loaded 1 memories from store
+2026-02-02T14:13:59.332502Z  INFO ralph_core::event_loop: Injecting 1 memories (187 chars) into prompt
+2026-02-02T14:13:59.332517Z  INFO ralph_core::event_loop: Injecting scratchpad (695 chars) into prompt
+2026-02-02T14:13:59.332538Z  INFO ralph_core::event_loop: Injecting ready tasks (3 ready, 3 open, 1 closed) into prompt
+2026-02-02T14:15:42.572377Z  INFO ralph_tui::app: Ctrl+C detected, signaling main loop

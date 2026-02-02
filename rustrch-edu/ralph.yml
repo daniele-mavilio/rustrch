@@ -1,118 +1,81 @@
 cli:
-  backend: "codex"
-
+  backend: custom
+  command: opencode
+  args:
+  - run
+  - -m
+  - openrouter/mistralai/devstral-2512
+  prompt_mode: arg
 event_loop:
-  prompt_file: "PROMPT.md"
-  completion_promise: "LOOP_COMPLETE"
-  max_iterations: 500
-  max_runtime_seconds: 18000
-  idle_timeout_secs: 30
-  starting_event: "edu.start"
-
-core:
-  specs_dir: "lezioni"
-  scratchpad: ".ralph/scratchpad.md"
-  guardrails:
-    - " genera SOLO documentazione didattica: Markdown con pseudocodice e spiegazioni."
-    - "ZERO codice Rust compilabile. Solo pseudocodice esplicativo."
-    - "Ogni sezione deve essere MINIMO 1000 parole. Espandi con esempi, storia, analogie."
-    - "Tre esempi progressivi obbligatori per ogni concetto: base, medio, avanzato."
-    - "Pseudocodice con gestione errori (Result<T,E>, Option, ? operator)."
-    - "Minimo 4 link risorse specifiche per argomento (docs rust, book, crate)."
-    - "Lingua: Italiano. Stile: accademico ma comprensibile."
-    - "Durata target: 4 ore. Non uscire finché non hai 40000+ parole totali."
-
-memories:
-  enabled: true
-  injection: "auto"
-
-tasks:
-  enabled: true
-
+  prompt_file: PROMPT.md
+  completion_promise: LOOP_COMPLETE
+  starting_event: edu.start
+  max_iterations: 300
+  checkpoint_interval: 2
+  max_runtime_seconds: 28800
 RObot:
   enabled: true
-  timeout_seconds: 600
-  telegram:
-    bot_token: "${RALPH_TELEGRAM_BOT_TOKEN}"
-    chat_id: "${RALPH_TELEGRAM_CHAT_ID}"
-
+  timeout_seconds: 120
+memories:
+  enabled: true
+  inject: auto
+  budget: 4000
+tasks:
+  enabled: true
 hats:
   architect:
-    name: "📋 Architect"
-    description: "Crea 40 task atomici (5 per lezione) per granularità estrema"
-    triggers: ["edu.start"]
-    publishes: ["outline.ready"]
+    name: Architect
+    description: Usa i file in specs/ per pianificare i prossimi 10-15 task.
+    triggers:
+    - edu.start
+    publishes:
+    - outline.ready
     instructions: |
-      Crea esattamente 40 task usando: ralph tools task add "[FASE X.Y] Descrizione"
-      
-      Struttura obbligatoria per lezione (5 task ciascuna):
-      Lezione 1: Intro Rust → 1.1 Ownership, 1.2 Borrowing, 1.3 Struct/Enum, 1.4 Pattern Match, 1.5 Esercizi
-      Lezione 2: Setup → 2.1 Install Termux, 2.2 Cargo, 2.3 IDE mobile, 2.4 Toolchain, 2.5 Debug
-      Lezione 3: Async → 3.1 Concetti async, 3.2 Tokio fs, 3.3 Crawling ricorsivo, 3.4 Errori I/O, 3.5 Performance
-      Lezione 4: DB → 4.1 SQLite setup, 4.2 rusqlite, 4.3 Serde JSON, 4.4 Transazioni, 4.5 Indici
-      Lezione 5: ML → 5.1 Embedding concetti, 5.2 ORT/ONNX, 5.3 Vettori, 5.4 Cosine sim, 5.5 Normalizzazione
-      Lezione 6: Ricerca → 6.1 Tokenizzazione, 6.2 BM25 algo, 6.3 Inverted index, 6.4 Ranking, 6.5 Scoring
-      Lezione 7: Perf → 7.1 Rayon parallel, 7.2 Caching, 7.3 Benchmark criterion, 7.4 Ottimizzazione mem, 7.5 Profiling
-      Lezione 8: Deploy → 8.1 Build release, 8.2 Ottimizzazioni, 8.3 Risorse avanzate, 8.4 FAQ, 8.5 Conclusione
-      
-      Solo dopo aver creato tutti i 40 task: ralph emit outline.ready
-
+      ## MISSIONE: DISCOVERY SPEC-DRIVEN
+      1. Scansiona le directory in `lezioni/` per vedere dove siamo rimasti.
+      2. Leggi il file `specs/*/PROMPT.md` corrispondente alla fase attuale.
+      3. Trasforma le sezioni descritte in quel file in task granulari usando `ralph tools task add "[LX.YY] Titolo"`.
+      4. NON creare 200 task. Crea MASSIMO 10-15 task per volta per mantenere il contesto pulito.
+      5. Emetti `outline.ready` appena il DB è aggiornato.
   writer:
-    name: "✍️ Writer"
-    description: "Scrive una singola micro-sezione didattica densa (1000+ parole)"
-    triggers: ["outline.ready", "write.next"]
-    publishes: ["section.written"]
+    name: Writer
+    description: Produce contenuti e salva memorie per ogni sezione.
+    triggers:
+    - outline.ready
+    - write.next
+    - review.reject
+    publishes:
+    - section.written
     instructions: |
-      Missione: Scrivi UN task solo, ma massimo 1500 parole di contenuto denso.
-      
-      Struttura obbligatoria per ogni sezione:
-      1. **Teoria** (400 parole): Concetto base con analogia reale
-      2. **Esempio Base** (200 parole): Codice semplice spiegato riga-riga
-      3. **Esempio Pratico** (200 parole): Caso d'uso reale nel motore di ricerca
-      4. **Esempio Avanzato** (200 parole): Edge case, errori, lifetime complesse
-      5. **Pseudocodice Completo** (min 30 righe): Sintassi Rust valida in commenti
-      6. **Box Errori Comuni**: 3 errori tipici e soluzioni
-      7. **Risorse**: Minimo 4 link specifici (Rust Book, Docs.rs, Articles)
-      8. **Esercizi**: 3 esercizi svolti con spiegazione
-      
-      Se il file è <1000 parole, espandi con: storicità del concetto, confronto con C/Python, dettagli compilatore.
-      
-      Dopo aver salvato il file e chiuso il task (ralph tools task done ID), emetti: section.written
-
+      ## MISSIONE: SCRITTURA DIDATTICA
+      1. Prendi il PRIMO task pronto: `ralph tools task ready --format json | head -1`.
+      2. Scrivi la sezione seguendo il format del PROMPT.md. Mantieniti sui 500-600 parole.
+      3. Usa Mistral per generare spiegazioni tecniche eccellenti.
+      4. DOPO il salvataggio: `ralph tools memory add "Visti i concetti in [TAG], ora sappiamo gestire [CONCETTO]" -t pedagogico`.
+      5. Chiudi il task e emetti `section.written [PATH]`.
   reviewer:
-    name: "🔍 Reviewer"
-    description: "Verifica qualità e blocca se insufficiente (forza espansione)"
-    triggers: ["section.written"]
-    publishes: ["review.done", "write.expand"]
+    name: Reviewer
+    description: Verifica che il file rispetti i criteri minimi.
+    triggers:
+    - section.written
+    publishes:
+    - review.approve
+    - review.reject
     instructions: |
-      Controlla l'ultimo file scritto. Se trovi ALMENO UNO di questi difetti:
-      - Mancano 3 esempi progressivi distinti
-      - Pseudocodice senza gestione errori (Result/Option)
-      - Meno di 4 link risorse
-      - Manca sezione "Errori Comuni"
-      - Testo <1000 parole
-      
-      ALLORA:
-      1. Correggi/aggiungi ciò che manca direttamente nel file
-      2. Emetti: write.expand (per forzare riscrittura/integrazione)
-      
-      Se tutto OK:
-      Emetti: review.done
-
+      ## VALIDAZIONE
+      1. Controlla il file appena scritto. Deve avere: Teoria, Esempio, Pseudocodice (//), Risorse, Esercizio.
+      2. Se mancano sezioni o è troppo corto (<300 parole), emetti `review.reject`.
+      3. Se OK, emetti `review.approve`.
   coordinator:
-    name: "🎯 Coordinator"
-    description: "Gestisce loop infinito, crea task bonus se necessario per durare 4h"
-    triggers: ["review.done"]
-    publishes: ["write.next", "edu.complete"]
+    name: Coordinator
+    description: Decide se andare avanti, ri-pianificare o finire.
+    triggers:
+    - review.approve
+    publishes:
+    - write.next
+    - edu.start
+    - LOOP_COMPLETE
     instructions: |
-      Strategia per 4 ore minimo:
-      
-      1. Controlla task: ralph tools task list
-      2. Se ci sono task "todo": emetti write.next (continua)
-      3. Se tutti i 40 task sono "done":
-         - Crea 10 task "BONUS": FAQ dettagliate, Troubleshooting, Case Studies, Approfondimenti compilatore
-         - Emetti write.next
-      4. Solo quando hai >40000 parole in totale (verifica con wc -w lezioni/*.md):
-         - Crea INDEX.md con mappa completa
-         - Emetti: edu.complete
-
+      1. Se ci sono ancora task 'open', emetti `write.next`.
+      2. Se i task sono finiti ma mancano ancora intere lezioni (L4-L8), emetti `edu.start` per far pianificare il lotto successivo all'Architect.
+      3. Se tutto il corso è completo (150-200 file), emetti `LOOP_COMPLETE`.

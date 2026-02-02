@@ -2,7 +2,7 @@
 # Per progetti di documentazione didattica con molti subtask
 
 cli:
-  backend: "codex"
+  backend: "opencode"
 
 event_loop:
   prompt_file: "PROMPT.md"

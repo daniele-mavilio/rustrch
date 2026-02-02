@@ -1,0 +1,38 @@
+{"ts":"2026-02-02T17:27:16.208183199+00:00","iteration":0,"hat":"loop","topic":"edu.start","triggered":"planner","payload":"# Generazione Corso Rust - Motore di Ricerca\n\n## Obiettivo\n\nGenerare 200+ micro-sezioni didattiche (300-500 parole ciascuna) in italiano\nper un corso completo su \"Costruire un Motore di Ricerca (per cli) in Rust\".\nTarget: 150 file .md totali tra le lezioni.\n\n## Pubblico\n\nStudente italiano che conosce Python/JavaScript base, mai usato Rust,\nvuole imparare costruendo un progetto reale.\n\n## Regole di Generazione\n\n### Lingua\n- Tutto il testo in italiano\n- Parole inglesi permesse SOLO dentro blocchi ... [truncated, 4137 chars total]"}
+{"payload":"Ciao","topic":"human.guidance","ts":"2026-02-02T17:27:16.374474099+00:00"}
+{"payload":null,"topic":"outline.ready","ts":"2026-02-02T17:28:25.090700903+00:00"}
+{"payload":null,"topic":"outline.ready","ts":"2026-02-02T17:28:48.797351385+00:00"}
+{"payload":"/home/daniele/personal/learning/rustrch/rustrch-edu/lezioni/06-search/L4.01-introduzione-alla-fase-di-ricerca.md","topic":"section.written","ts":"2026-02-02T17:29:30.026350236+00:00"}
+{"payload":null,"topic":"review.approve","ts":"2026-02-02T17:29:40.082902054+00:00"}
+{"payload":null,"topic":"write.next","ts":"2026-02-02T17:30:20.483070169+00:00"}
+{"payload":"/home/daniele/personal/learning/rustrch/rustrch-edu/lezioni/04-database/L4.03-algoritmo-bm25-teoria.md","topic":"section.written","ts":"2026-02-02T17:31:04.074687365+00:00"}
+{"payload":null,"topic":"review.approve","ts":"2026-02-02T17:31:13.252382890+00:00"}
+{"payload":null,"topic":"write.next","ts":"2026-02-02T17:31:59.326832140+00:00"}
+{"payload":"/home/daniele/personal/learning/rustrch/rustrch-edu/lezioni/04-database/L4.05-pseudocodice-ricerca-semantica.md","topic":"section.written","ts":"2026-02-02T17:32:37.213170901+00:00"}
+{"payload":null,"topic":"review.approve","ts":"2026-02-02T17:32:45.946899211+00:00"}
+{"payload":null,"topic":"write.next","ts":"2026-02-02T17:32:51.844058389+00:00"}
+{"payload":"/home/daniele/personal/learning/rustrch/rustrch-edu/lezioni/04-database/L4.06-pseudocodice-ricerca-ibrida.md","topic":"section.written","ts":"2026-02-02T17:33:26.326584753+00:00"}
+{"payload":null,"topic":"review.approve","ts":"2026-02-02T17:33:33.562688045+00:00"}
+{"payload":null,"topic":"write.next","ts":"2026-02-02T17:35:12.862188632+00:00"}
+{"payload":"lezioni/01-crawling/01-introduzione-alla-fase-di-crawling.md","topic":"section.written","ts":"2026-02-02T17:36:16.059499041+00:00"}
+{"ts":"2026-02-02T17:40:08.377770289+00:00","iteration":0,"hat":"loop","topic":"edu.start","triggered":"planner","payload":"# Generazione Corso Rust - Motore di Ricerca\n\n## Obiettivo\n\nGenerare 200+ micro-sezioni didattiche (300-500 parole ciascuna) in italiano\nper un corso completo su \"Costruire un Motore di Ricerca (per cli) in Rust\".\nTarget: 150 file .md totali tra le lezioni.\n\n## Pubblico\n\nStudente italiano che conosce Python/JavaScript base, mai usato Rust,\nvuole imparare costruendo un progetto reale.\n\n## Regole di Generazione\n\n### Lingua\n- Tutto il testo in italiano\n- Parole inglesi permesse SOLO dentro blocchi ... [truncated, 4137 chars total]"}
+{"payload":null,"topic":"edu.start","ts":"2026-02-02T17:40:12.850896974+00:00"}
+{"payload":null,"topic":"edu.start","ts":"2026-02-02T17:41:37.781943930+00:00"}
+{"payload":null,"topic":"outline.ready","ts":"2026-02-02T17:42:17.292331359+00:00"}
+{"payload":"lezioni/05-testing/L5.01-introduzione-testing.md","topic":"section.written","ts":"2026-02-02T17:42:47.256912822+00:00"}
+{"payload":"Sezioni complete e wordcount adeguato","topic":"review.approve","ts":"2026-02-02T17:42:57.185059766+00:00"}
+{"payload":null,"topic":"write.next","ts":"2026-02-02T17:43:23.596192005+00:00"}
+{"payload":"/home/daniele/personal/learning/rustrch/rustrch-edu/lezioni/05-testing/L5.03-pseudocodice-test-crawler.md","topic":"section.written","ts":"2026-02-02T17:43:59.577000054+00:00"}
+{"payload":null,"topic":"review.approve","ts":"2026-02-02T17:44:07.518970551+00:00"}
+{"payload":null,"topic":"write.next","ts":"2026-02-02T17:44:36.573531088+00:00"}
+{"payload":"/home/daniele/personal/learning/rustrch/rustrch-edu/lezioni/05-testing/L5.05-pseudocodice-test-ricerca.md","topic":"section.written","ts":"2026-02-02T17:45:14.154281975+00:00"}
+{"payload":null,"topic":"review.approve","ts":"2026-02-02T17:45:21.862241817+00:00"}
+{"payload":null,"topic":"write.next","ts":"2026-02-02T17:45:58.870943022+00:00"}
+{"payload":"lezioni/05-testing/L5.07-ottimizzazione-performance.md","topic":"section.written","ts":"2026-02-02T17:46:41.844575397+00:00"}
+{"payload":null,"topic":"review.approve","ts":"2026-02-02T17:46:49.434426721+00:00"}
+{"payload":null,"topic":"write.next","ts":"2026-02-02T17:47:28.427684411+00:00"}
+{"payload":"/home/daniele/personal/learning/rustrch/rustrch-edu/lezioni/05-testing/L5.09-pseudocodice-crawling-parallelo.md","topic":"section.written","ts":"2026-02-02T17:48:03.302197153+00:00"}
+{"payload":null,"topic":"review.approve","ts":"2026-02-02T17:48:12.592962430+00:00"}
+{"payload":null,"topic":"write.next","ts":"2026-02-02T17:48:52.517294958+00:00"}
+{"payload":"lezioni/06-conclusione/L6.01-riepilogo-del-corso.md","topic":"section.written","ts":"2026-02-02T17:50:05.084204743+00:00"}
+{"ts":"2026-02-02T17:57:53.812207283+00:00","iteration":25,"hat":"loop","topic":"loop.terminate","payload":"## Reason\nconsecutive_failures\n\n## Status\nToo many consecutive failures.\n\n## Summary\n- Iterations: 25\n- Duration: 17m 45s\n- Exit code: 1"}
